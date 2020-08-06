@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index</title>
+    <link rel="stylesheet" href="css/main.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!--start wrapper-->
+    <div class="wrapper" id="wrapper">
+        <!--start hero-->
+        <div class="hero">
+
+            <!--start header-->
+            <header class="header" id="header">
+                <a class="logo" href="/">
+                    <img class="logo__img" src="images/logo.svg" alt="">
+                    <span class="logo__text">
+                        Россегрн
+                    </span>
+                </a>
+                <nav class="menu">
+                    <ul class="menu__list">
+                        <li class="menu__list-item">
+                            <a href="#" class="menu__list-link">
+                                Выписки и цены
+                            </a>
+                        </li>
+                        <li class="menu__list-item">
+                            <a href="#" class="menu__list-link">
+                                Вопросы и ответы
+                            </a>
+                        </li>
+                        <li class="menu__list-item">
+                            <a href="#" class="menu__list-link">
+                                Мои заказы
+                            </a>
+                        </li>
+                        <li class="menu__list-item menu__list-item--basket">
+                            <a href="#" class="menu__list-link">
+                                <img class="menu__basket-img" src="images/basket.svg" alt="">
+                                <span>Корзина</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <a class="basket-mobile" href="#">
+                    <img class="basket-mobile__img" src="images/basket.svg" alt="">
+                </a>
+                <button class="nav-toggle">
+                    <span class="bar-top"></span>
+                    <span class="bar-mid"></span>
+                    <span class="bar-bot"></span>
+                  </button>
+            </header>
+            <!--end header-->
+            <div class="hero__inner">
+                <div class="container">
+                    <h2 class="section-title hero__title">
+                        Срочные выписки из ФГИС ЕГРН онлайн
+                    </h2>
+                    <p class="hero__subtitle">
+                        Закажите срочную выписку из Росреестра за 5 минут на квартиру, дом или земельный участок
+                        в форматах PDF, ZIP с электронной подписью Росреестра
+                    </p>
+                    <form class="search-form hero__form">
+                        <div class="search-form__inner">
+                            <div class="search-form__input-block">
+                                <input name="search" type="text" class="search-form__input"
+                                    placeholder="Введите кадастровый номер или адрес объекта">
+                                <!-- <label for="search" class="search-form__label">Введите кадастровый номер или адрес объекта</label> -->
+                                <button type="submit" class="button button--green search-form__button">
+                                    <img class="search-form__button-img" src="images/icons/search.svg" alt="">
+                                    Найти объект
+                                </button>
+                            </div>
+                            <p class="search-form__example">
+                                Например, 47:14:1203001:814 или г Москва, ул Кремль, д 1
+                            </p>
+                        </div>
+                    </form>
+
+
+                </div>
+            </div>
+            <!--start advantages-->
+            <div class="advantages">
+                <div class="advantages__row">
+                    <div class="advantages__container">
+                        <div class="advantages__item">
+                            <div class="advantages__img-block">
+                                <img class="advantages__item-img" src="images/advantages/1.svg" alt="">
+
+                            </div>
+                            <p class="advantages__title">
+                                Быстро
+                            </p>
+                            <p class="advantages__text">
+                                90% заказов готовы в течение двух часов
+                            </p>
+                        </div>
+                    </div>
+                    <div class="advantages__container">
+                        <div class="advantages__item">
+                            <div class="advantages__img-block">
+                                <img class="advantages__item-img" src="images/advantages/2.svg" alt="">
+
+                            </div>
+                            <p class="advantages__title">
+                                Просто
+                            </p>
+                            <p class="advantages__text">
+                                Оформление заказа в пару кликов и без регистрации
+                            </p>
+                        </div>
+                    </div>
+                    <div class="advantages__container">
+                        <div class="advantages__item">
+                            <div class="advantages__img-block">
+                                <img class="advantages__item-img" src="images/advantages/3.svg" alt="">
+
+                            </div>
+                            <p class="advantages__title">
+                                Надежно
+                            </p>
+                            <p class="advantages__text">
+                                Гарантия возврата средств в случае отсутствия выписки
+                            </p>
+                        </div>
+                    </div>
+                    <div class="advantages__container">
+                        <div class="advantages__item">
+                            <div class="advantages__img-block">
+                                <img class="advantages__item-img" src="images/advantages/4.svg" alt="">
+
+                            </div>
+                            <p class="advantages__title">
+                                Безопасно
+                            </p>
+                            <p class="advantages__text">
+                                Только официальные данные с ЭЦП Росреестра
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--end advantages-->
+
+            <!--start search-result-->
+            <div class="search-result">
+                <div class="container">
+                    <div class="search-result__inner">
+                        <div class="search-result__number title--underline">
+                            23:33:0907011:9
+                            <span class="search-result__type">
+                                Земельный участок
+                            </span>
+                        </div>
+                        <div class="search-result__address">
+                            р-н Туапсинский, тер Небугское сельское поселение, с Агой, тер СТ Машиностроитель, д уч.№198
+                        </div>
+                        <div class="search-result__row">
+                            <div class="search-result__container">
+                                <div class="search-result-item">
+                                    <div class="search-result-item__img-block">
+                                        <img class="search-result-item__img" src="images/search-result/1.svg" alt="">
+                                    </div>
+                                    <div class="search-result-item__text-block">
+                                        <div class="search-result-item__title">
+                                            Площадь
+                                        </div>
+                                        <div class="search-result-item__value">
+                                            620 кв. м.
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                            <div class="search-result__container">
+                                <div class="search-result-item">
+                                    <div class="search-result-item__img-block">
+                                        <img class="search-result-item__img" src="images/search-result/2.svg" alt="">
+                                    </div>
+                                    <div class="search-result-item__text-block">
+                                        <div class="search-result-item__title">
+                                            Статус
+                                        </div>
+                                        <div class="search-result-item__value">
+                                            Ранее учтенный
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                            <div class="search-result__container">
+                                <div class="search-result-item">
+                                    <div class="search-result-item__img-block">
+                                        <img class="search-result-item__img" src="images/search-result/3.svg" alt="">
+                                    </div>
+                                    <div class="search-result-item__text-block">
+                                        <div class="search-result-item__title">
+                                            Дата учета
+                                        </div>
+                                        <div class="search-result-item__value">
+                                            -
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <table class="search-result__table">
+                            <tr class="search-result__tr">
+                                <td class="search-result__td">
+                                    Кадастровый номер
+                                </td>
+                                <td class="search-result__td">
+                                    23:33:0907011:9
+                                </td>
+                            </tr>
+                            <tr class="search-result__tr">
+                                <td class="search-result__td">
+                                    Адрес
+                                </td>
+                                <td class="search-result__td">
+                                    р-н Туапсинский, тер Небугское сельское поселение, с Агой, тер СТ Машиностроитель, д уч.№198
+                                </td>
+                            </tr>
+                            <tr class="search-result__tr">
+                                <td class="search-result__td">
+                                    Кадастровая стоимость
+                                </td>
+                                <td class="search-result__td">
+                                    1700089.6 руб. (Земля)
+                                </td>
+                            </tr>
+                            <tr class="search-result__tr">
+                                <td class="search-result__td">
+                                    Категория
+                                </td>
+                                <td class="search-result__td">
+                                    Земли сельскохозяйственного назначения
+                                </td>
+                            </tr>
+                            <tr class="search-result__tr">
+                                <td class="search-result__td">
+                                    Разрешенное использование
+                                </td>
+                                <td class="search-result__td">
+                                    Для садоводства (для ведения гражданами садоводства и огородничества)
+                                </td>
+                            </tr>
+                            <tr class="search-result__tr">
+                                <td class="search-result__td">
+                                    Дата определения стоимости
+                                </td>
+                                <td class="search-result__td">
+                                    -
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    
+                </div>
+            </div>
+            <!--end search-result-->
+
+
+
+
+        </div>
+        <!--end hero-->
+
+
+
+        <!--start main-->
+        <main class="main" id="main">
+
+            <!--start extracts-->
+            <section class="extracts">
+                <div class="container">
+                    <h2 class="section-title extracts__title">Виды выписок из Егрн</h2>
+                    <h2 class="section-title extracts__title extracts__title--show-result">Выберите тип выписки</h2>
+                    <div class="extracts__inner">
+                        <div class="extracts__container ">
+                            <div class="extracts-item ">
+                                <div class="extracts-item__item">
+                                    <a class="extracts-item__img-block" href="#">
+                                        <img class="extracts-item__img" src="images/extracs/1.jpg" alt="">
+                                    </a>
+                                    <div class="extracts-item__text-block">
+                                        <h5 class="extracts-item__title">
+                                            Об объекте недвижимости
+                                        </h5>
+                                        <p class="extracts-item__desc">
+                                            Расширенная выписка. Указывается собственник (если есть), ограничения,
+                                            обременения, дата
+                                            регистрации прав, расширенные технические данные объекта.
+                                        </p>
+                                        <p class="extracts-item__desc extracts-item__desc--grey extracts-item__desc--show-result">
+                                            Основные данные, информация о наличии обременений, ФИО владельца, если есть
+                                        </p>
+                                    </div>
+                                </div>
+                                
+
+                                <a class="extracts-item__link" href="#">
+                                    <img class="extracts-item__link-img" src="images/icons/list.svg" alt="">
+                                    <span>Посмотреть образец</span>
+                                </a>
+                                <div class="extracts-item__price">
+                                    249 ₽
+                                </div>
+                                <button class="extracts-item__add-basket">
+                                    <img class="extracts-item__add-basket-add" src="images/basket-add.svg" alt="">
+                                </button>
+                                <a class="button button--blue extracts-item__button" href="#">
+                                    заказать
+                                </a>
+                            </div>
+                        </div>
+                        <div class="extracts__container ">
+                            <div class="extracts-item ">
+                                <div class="extracts-item__item">
+                                    <a class="extracts-item__img-block" href="#">
+                                        <img class="extracts-item__img" src="images/extracs/1.jpg" alt="">
+                                    </a>
+                                    <div class="extracts-item__text-block">
+                                        <h5 class="extracts-item__title">
+                                            О переходе прав
+                                        </h5>
+                                        <p class="extracts-item__desc">
+                                            Полная история собственников недвижимости с 1998 года. Текущий и все предыдущие
+                                            собственники, дата регистрации возникновения и прекращения их прав.
+                                        </p>
+                                        <p class="extracts-item__desc extracts-item__desc--grey extracts-item__desc--show-result">
+                                            История собственников (если есть) по сделкам, совершенным с 1998 года
+                                        </p>
+                                    </div>
+                                </div>
+                                
+
+                                <a class="extracts-item__link" href="#">
+                                    <img class="extracts-item__link-img" src="images/icons/list.svg" alt="">
+                                    <span>Посмотреть образец</span>
+                                </a>
+                                <div class="extracts-item__price">
+                                    249 ₽
+                                </div>
+                                <button class="extracts-item__add-basket">
+                                    <img class="extracts-item__add-basket-add" src="images/basket-add.svg" alt="">
+                                </button>
+                                <a class="button button--blue extracts-item__button" href="#">
+                                    заказать
+                                </a>
+                            </div>
+                        </div>
+                        <div class="extracts__container extracts__container--show-result">
+                            <div class="extracts-item ">
+                                <div class="extracts-item__item">
+                                    <a class="extracts-item__img-block extracts-item__img-block--after" href="#">
+                                        <img class="extracts-item__img" src="images/extracs/1.jpg" alt="">
+                                    </a>
+                                    <a class="extracts-item__img-block" href="#">
+                                        <img class="extracts-item__img" src="images/extracs/1.jpg" alt="">
+                                    </a>
+                                    <div class="extracts-item__text-block">
+                                        <h5 class="extracts-item__title">
+                                            Две справки
+                                        </h5>
+                                        <p class="extracts-item__desc extracts-item__desc--show-result">
+                                            Об объекте недвижимости и о переходе прав
+                                        </p>
+                                    </div>
+                                </div>
+                                
+
+                                <a class="extracts-item__link" href="#">
+                                    <img class="extracts-item__link-img" src="images/icons/list.svg" alt="">
+                                    <span>Подробнее о скидках</span>
+                                </a>
+                                <div class="extracts-item__price extracts-item__price--green">
+                                    <div class="extracts-item__old-price">
+                                        500 ₽
+                                    </div>
+                                    400 ₽
+                                </div>
+                                <button class="extracts-item__add-basket">
+                                    <img class="extracts-item__add-basket-add" src="images/basket-add.svg" alt="">
+                                </button>
+                                <a class="button button--blue extracts-item__button" href="#">
+                                    заказать
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!--start extracts-->
+
+            <!--start how-work-->
+            <section class="how-work">
+                <h2 class="section-title how-work__title">
+                    Как работает наш сервис
+                </h2>
+                <div class="how-work__inner">
+                    <div class="how-work__container">
+                        <div class="how-work-item how-work__item">
+                            <img class="how-work-item__img" src="images/how-work/1.svg" alt="">
+                            <div class="how-work-item__text-block">
+                                <div class="how-work-item__title">
+                                    Поиск объекта
+                                </div>
+                                <p class="how-work-item__text">
+                                    Введите кадастровый номер или точный адрес объекта, в окне результатов поиска введите
+                                    свою электронную почту ⟶
+                                </p>
+                                <a class="how-work-item__find" href="#">
+                                    Найти объект
+                                </a>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div class="how-work__container">
+                        <div class="how-work-item how-work__item">
+                            <img class="how-work-item__img" src="images/how-work/2.svg" alt="">
+                            <div class="how-work-item__text-block">
+                                <div class="how-work-item__title">
+                                    Оплата заказа
+                                </div>
+                                <p class="how-work-item__text">
+                                    Стоимость выписки из ЕГРН (об основных характеристиках или о переходе прав)
+                                    составляет <span>всего 249 рублей</span>
+                                </p>
+                            </div>
+                            
+
+                        </div>
+                    </div>
+                    <div class="how-work__container">
+                        <div class="how-work-item how-work__item">
+                            <img class="how-work-item__img" src="images/how-work/3.svg" alt="">
+                            <div class="how-work-item__text-block">
+                                <div class="how-work-item__title">
+                                    Получение заказа
+                                </div>
+                                <p class="how-work-item__text">
+                                    После получения ответа из официальной базы Росреестра, выписка будет отправлена вам на
+                                    почту в форматах <span>PDF, ZIP с ЭЦП Росреестра</span>
+                                </p>
+                            </div>
+                            
+
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!--end how-work-->
+
+            <!--start location-->
+            <section class="location">
+                <div class="container">
+                    <div class="location__inner">
+                        <h2 class="section-title location__title title--underline   ">
+                            Работаем по всей России
+                        </h2>
+                        <ul class="location__list">
+                            <li class="location__list-item">Все основные виды выписок без посещения МФЦ</li>
+                            <li class="location__list-item">Работаем круглосуточно, без выходных</li>
+                            <li class="location__list-item">Выписка из ЕГРН с электронной подписью Росреестра</li>
+                            <li class="location__list-item">Только официальные данные из Росреестра</li>
+                            <li class="location__list-item">Быстрое получение информации</li>
+                        </ul>
+                        <div class="location__price-block">
+                            <span class="location__price-text">от 59 руб. за справку</span>
+                            <a class="location__price-link" href="#">
+                                Подробнее о скидках
+                            </a>
+                        </div>
+                        <div class="location__button-block">
+                            <button class="button button--green location__button">
+                                Заказать выписку онлайн
+                            </button>
+                            <div class="location__total">
+                                Сегодня заказали <br> <span>1234</span> выписок
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!--end location-->
+
+
+        </main>
+        <!--end main-->
+
+        <!--start footer-->
+        <footer class="footer" id="footer">
+            <div class="footer__inner">
+                <div class="footer__container">
+                    <a class="logo footer__logo" href="/">
+                        <img class="logo__img" src="images/logo.svg" alt="">
+                        <span class="logo__text">
+                            Россегрн
+                        </span>
+                    </a>
+                    <div class="footer__text footer__subtitle footer__text--grey">
+                        Заказ выписок из ЕГРН,
+                        предоставление онлайн-сведений
+                    </div>
+                    <a class="footer__link" href="#">
+                        Обработка персональных данных
+                    </a>
+                    <a class="footer__link" href="#">
+                        Публичная оферта
+                    </a>
+                </div>
+                <div class="footer__container">
+                    <p class="footer__text">
+                        Время получения выписки: <br>
+                        от 5 минут до 3 суток
+                    </p>
+                    <p class="footer__text footer__text--medium">
+                        Время получения выписки зависит <br>
+                        от скорости обработки запроса Росреестром
+                    </p>
+                    <p class="footer__text">
+                        Если Вы не получили выписку <br>
+                        по прошествии 3 рабочих дней, <br>
+                        мы вернём Вам деньги
+                    </p>
+                </div>
+                <div class="footer__container">
+                    <p class="footer__text">
+                        Техническия поддержка сервиса: <br>
+                        <a class="footer__link" href="mailto:support@rossegrn.info">
+                            support@rossegrn.info
+                        </a>
+                    </p>
+                    <p class="footer__text">
+                        Сервис не является органом государственной власти <br>
+                         или ее ведомственным подразделением.
+                    </p>
+                    <p class="footer__text">
+                        Сервис не изготавливает выписки из ЕГРН, а оказывает <br>
+                         услугу онлайн-заказа выписок из Росреестра.
+                    </p>
+                </div>
+            </div>
+        </footer>
+        <!--end footer-->
+
+
+    </div>
+    <!--end wrapper-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/libs.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
