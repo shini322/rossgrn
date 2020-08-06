@@ -33,9 +33,8 @@ $('.search-form__button').on('click', function(){
     $('.advantages').addClass('show-result')
     $('.search-result').addClass('show-result')
     $('.extracts').addClass('show-result')
-    $('.extracts__container').addClass('show-result')
-    $('.extracts-item').addClass('show-result')
-
+    // $('.extracts__container').addClass('show-result')
+    // $('.extracts-item').addClass('show-result')
 });
 
 $('.nav-toggle').on('click', function(){
@@ -45,7 +44,7 @@ $('.nav-toggle').on('click', function(){
 
 $('.menu__list-link').on('click', function(e) {
     
-    // $('.content').addClass('dn')
+    $('.extracts').removeClass('show-result')  
 
 });
 
@@ -66,6 +65,7 @@ $('.menu__list-link--questions').on('click', function(e) {
     $('.questions').removeClass('dn')
     $('.how-work').removeClass('dn')
     $('.location').removeClass('dn')
+    
 });
 
 

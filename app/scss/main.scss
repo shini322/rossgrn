@@ -559,6 +559,86 @@ button{
         margin-top: 20px;
     }
 
+    .extracts-item{
+        display: flex;
+        align-items: center;
+        padding: 12px 30px 13px;
+        box-shadow: 0px 12px 32px rgba(31, 38, 45, 0.15);
+        border-radius: 10px;
+        background-color: $white;
+        .extracts-item__item{
+            display: flex;
+            align-items: center;
+            width: 50%;
+        }
+        .extracts-item__img-block{
+            position: relative;
+            display: flex;
+            align-items: center;
+            max-width: 52px;
+            height: 75px;
+            margin-bottom: 0;
+            margin-right: 30px;
+            
+            &--after{
+                margin-right: 38px;
+                &:after{
+                    content: '+';
+                    margin-left: 7px;
+                    font-weight: 500;
+                    font-size: 40px;
+                    line-height: 26px;
+                    color: $blue;
+                }
+            }
+            
+        }
+        .extracts-item__desc{
+            display: none;
+            &--show-result{
+                display: block;
+            }
+        }
+        .extracts-item__text-block{
+            
+            max-width: 335px;
+            width: 100%;
+            
+        }
+        .extracts-item__link{
+            margin-left: auto;
+            margin-top: 0;
+            max-width: 140px;
+            font-size: 12px;
+            line-height: 16px;
+        }
+        .extracts-item__price{
+            display: flex;
+        }
+        .extracts-item__add-basket{
+            display: flex;
+        }
+        .extracts-item__button{
+            display: block;
+        }
+        .extracts-item__old-price{
+            position: relative;
+            font-size: 18px;
+            line-height: 26px;
+            color: $black;
+            &::before{
+                content: '';
+                position: absolute;
+                height: 2px;
+                width: calc(100% + 6px);
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                background-color: $grey;
+            }
+        }
+    }
+
 }
 .extracts-item{
     &__img-block{
@@ -656,85 +736,7 @@ button{
         margin-left: 10px;
     }
 }
-.extracts-item.show-result{
-    display: flex;
-    align-items: center;
-    padding: 12px 30px 13px;
-    box-shadow: 0px 12px 32px rgba(31, 38, 45, 0.15);
-    border-radius: 10px;
-    background-color: $white;
-    .extracts-item__item{
-        display: flex;
-        align-items: center;
-        width: 50%;
-    }
-    .extracts-item__img-block{
-        position: relative;
-        display: flex;
-        align-items: center;
-        max-width: 52px;
-        height: 75px;
-        margin-bottom: 0;
-        margin-right: 30px;
-        
-        &--after{
-            margin-right: 38px;
-            &:after{
-                content: '+';
-                margin-left: 7px;
-                font-weight: 500;
-                font-size: 40px;
-                line-height: 26px;
-                color: $blue;
-            }
-        }
-        
-    }
-    .extracts-item__desc{
-        display: none;
-        &--show-result{
-            display: block;
-        }
-    }
-    .extracts-item__text-block{
-        
-        max-width: 335px;
-        width: 100%;
-        
-    }
-    .extracts-item__link{
-        margin-left: auto;
-        margin-top: 0;
-        max-width: 140px;
-        font-size: 12px;
-        line-height: 16px;
-    }
-    .extracts-item__price{
-        display: flex;
-    }
-    .extracts-item__add-basket{
-        display: flex;
-    }
-    .extracts-item__button{
-        display: block;
-    }
-    .extracts-item__old-price{
-        position: relative;
-        font-size: 18px;
-        line-height: 26px;
-        color: $black;
-        &::before{
-            content: '';
-            position: absolute;
-            height: 2px;
-            width: calc(100% + 6px);
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            background-color: $grey;
-        }
-    }
-}
+
 
 .how-work{
     padding: 74px 15px 71px;
