@@ -43,9 +43,14 @@ $('.nav-toggle').on('click', function(){
 });
 
 $('.menu__list-link').on('click', function(e) {
+    $('.extracts').removeClass('show-result') 
+    var w =  document.body.clientWidth; 
+    if (w <=  '650' )
+    {
+        $('.menu').slideToggle()
+        $('.nav-toggle').toggleClass('opened')
+    }
     
-    $('.extracts').removeClass('show-result')  
-
 });
 
 $('.menu__list-link--extract').on('click', function(e) { 
@@ -55,7 +60,10 @@ $('.menu__list-link--extract').on('click', function(e) {
     $('.content').addClass('dn')
     $('.price').removeClass('dn')
     $('.extracts').removeClass('dn')
+    // $('#content').load('index.html #content');
 });
+
+
 
 $('.menu__list-link--questions').on('click', function(e) { 
     e.preventDefault(); 
@@ -64,8 +72,7 @@ $('.menu__list-link--questions').on('click', function(e) {
     $('.content').addClass('dn')
     $('.questions').removeClass('dn')
     $('.how-work').removeClass('dn')
-    $('.location').removeClass('dn')
-    
+    $('.location').removeClass('dn')    
 });
 
 
@@ -79,7 +86,12 @@ $('.tab').on('click', function(e){
     $($(this).attr('href')).addClass('active');
   
   });
+
+
   $('.questions__item-title').on('click', function(){
     $(this).parent().toggleClass('active')
     $(this).next().slideToggle()
   });
+
+
+  $(".fancybox").fancybox();

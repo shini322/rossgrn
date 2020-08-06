@@ -537,6 +537,9 @@ button{
 }
 .extracts.show-result{
     padding-top: 420px;
+    @include for-md-mob{
+        padding-top: 440px;
+    }
     .extracts__title{
         display: none;
         &--show-result{
@@ -566,10 +569,22 @@ button{
         box-shadow: 0px 12px 32px rgba(31, 38, 45, 0.15);
         border-radius: 10px;
         background-color: $white;
+        @include for-md{
+            flex-direction: column;
+            justify-content: center;
+        }
         .extracts-item__item{
             display: flex;
             align-items: center;
             width: 50%;
+            @include for-md{
+                flex-direction: column;
+                margin-bottom: 20px;
+                width: 100%;
+            }
+            @include for-md-mob{
+                margin-bottom: 10px;
+            }
         }
         .extracts-item__img-block{
             position: relative;
@@ -591,6 +606,9 @@ button{
                     color: $blue;
                 }
             }
+            @include for-md{
+                margin-right: 0;
+            }
             
         }
         .extracts-item__desc{
@@ -598,11 +616,18 @@ button{
             &--show-result{
                 display: block;
             }
+            @include for-md-mob{
+                margin-bottom: 0;
+                line-height: 18px;
+            }
         }
         .extracts-item__text-block{
             
             max-width: 335px;
             width: 100%;
+            @include for-md{
+                text-align: center;
+            }
             
         }
         .extracts-item__link{
@@ -611,15 +636,38 @@ button{
             max-width: 140px;
             font-size: 12px;
             line-height: 16px;
+            @include for-md{
+                display: flex;
+                flex-direction: column;
+                margin-left: 0;
+                margin-bottom: 20px;
+            }
+            @include for-md-mob{
+                margin-bottom: 10px;
+            }
+        }
+        .extracts-item__link-img{
+            @include for-md{
+                margin-right: 0;
+                margin-bottom: 5px;
+            }
         }
         .extracts-item__price{
             display: flex;
+            @include for-md{
+                margin-left: 0;
+                margin-bottom: 15px;
+            }
+            @include for-md-mob{
+                margin-bottom: 10px;
+            }
         }
         .extracts-item__add-basket{
             display: flex;
         }
         .extracts-item__button{
             display: block;
+            
         }
         .extracts-item__old-price{
             position: relative;
@@ -635,6 +683,18 @@ button{
                 left: 50%;
                 transform: translate(-50%, -50%);
                 background-color: $grey;
+            }
+        }
+        .extracts-item__button-block{
+            display: flex;
+            justify-content: center;
+            max-width: 191px;
+            margin-left: 29px;
+            width: 100%;
+            @include for-md-mob{
+                margin-left: 0;
+                max-width: 100%;
+                flex-direction: column;
             }
         }
     }
@@ -714,12 +774,17 @@ button{
         display: none;
         align-items: center;
         justify-content: center;
-        margin-left: 29px;
         width: 46px;
         height: 46px;
         background: linear-gradient(180deg, #EBF2F8 0%, #E3EAF0 100%);
         border-radius: 8px;
         border-bottom: 3px solid #CCD6DF;
+        flex-shrink: 0;
+        @include for-md-mob{
+            width: 100%;
+            max-width: 100%;
+            margin-bottom: 10px;
+        }
     }
     &__button{
         display: none;
@@ -734,6 +799,12 @@ button{
         color: $white;
         text-align: center;
         margin-left: 10px;
+        flex-shrink: 0;
+        @include for-md-mob{
+            width: 100%;
+            max-width: 100%;
+            margin-left: 0;
+        }
     }
 }
 
@@ -1079,6 +1150,10 @@ button{
         padding: 40px 40px 30px;
         box-shadow: 0px 12px 32px rgba(31, 38, 45, 0.15);
         border-radius: 10px;
+        @include for-md-mob{
+            padding: 30px 15px 20px;
+            border-radius: 0;
+        }
 
     }
     &__number{
@@ -1098,19 +1173,42 @@ button{
         text-transform: none;
         letter-spacing: 0;
         font-weight: 400;
+        @include for-md-mob{
+            display: block;
+            width: 100%;
+            margin-left: 0;
+        }
     }
     &__address{
         margin-bottom: 55px;
         font-size: 18px;
         line-height: 28px;
+        @include for-md-mob{
+            font-size: 16px;
+            line-height: 24px;
+        }
     }
     &__row{
         display: flex;
         flex-wrap: wrap;
         margin-bottom: 69px;
+        @include for-sm{
+            margin-bottom: 30px;
+            justify-content: center;
+        }
+        @include for-md-mob{
+            margin-bottom: 15px;
+        }
+        
+        
     }
     &__container{
         width: 33.33333%;
+        @include for-sm{
+            width: 50%;
+            margin-bottom: 20px;
+        }
+       
     }
     &__table{
 
@@ -1121,6 +1219,18 @@ button{
                 border-bottom: none;
                 padding-bottom: 0;
             }
+        }
+        &:first-child{
+            @include for-md-mob{
+                border-top: 1px solid #DAE2EA;
+            }
+        }
+        @include for-md-mob{
+            display: flex;
+            padding: 10px;
+            flex-direction: column;
+            border: 1px solid #DAE2EA;
+            border-top: none;
         }
     }
     &__td{
@@ -1134,16 +1244,32 @@ button{
             font-size: 14px;
             line-height: 24px;
             color: $grey;
+            @include for-md-mob{
+                padding: 0;
+                width: 100%;
+            }
+        }
+        @include for-md-mob{
+            border: none;
+            width: 100%;
         }
     }
 }
 .search-result-item{
     display: flex;
     align-items: center;
+    @include for-sm{
+        flex-direction: column;
+        text-align: center;
+    }
     &__img-block{
         margin-right: 17px;
         max-width: 60px;
         max-height: 60px;
+        @include for-sm{
+            margin-right: 0;
+            margin-bottom: 10px;
+        }
     }
     &__img{
         display: block;
@@ -1168,6 +1294,7 @@ button{
     margin: 84px auto 40px;
     padding: 50px 0 40px;
     background-color: #F4F8FC;
+    
     &__title{
         text-align: center;
     }
@@ -1176,6 +1303,11 @@ button{
         font-size: 16px;
         line-height: 26px;
         text-align: center;
+        @include for-md-mob{
+            padding: 0 10px;
+            font-size: 14px;
+            line-height: 24px;
+       }
     }
     &__row{
         display: flex;
@@ -1185,15 +1317,34 @@ button{
         box-shadow: 0px 12px 32px rgba(31, 38, 45, 0.15);
         border-radius: 10px;
         background-color: $white;
+        @include for-md{
+            padding: 20px 30px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        @include for-md-mob{
+            margin-top: 15px;
+            border-radius: 0;
+        }
     }
     &__item{
         text-align: center;
+        @include for-md{
+            width: 33.3333%;
+            margin-bottom: 20px;
+        }
+        @include for-md-mob{
+            width: 50%;
+        }
     }
     &__item-total{
         margin-bottom: 14px;
         font-size: 14px;
         line-height: 22px;
         color: $grey;
+        @include for-md{
+            margin-bottom: 6px;
+        }
     }
     &__item-price{
         font-weight: 500;
@@ -1207,6 +1358,9 @@ button{
     margin: 103px auto 0;
     padding: 31px 67px;
     background-color: #F4F8FC;
+    @include for-md{
+        padding: 30px 0;
+    }
     &__title{
         text-align: center;
     }
@@ -1217,6 +1371,10 @@ button{
         margin-top: 28px;
         padding: 16px 73px;
         background-color: $white;
+        @include for-md{
+            flex-direction: column;
+            padding: 15px 0;
+        }
     }
     &__tab{
         font-size: 24px;
@@ -1225,6 +1383,15 @@ button{
         &.active{
             color: $grey;
             border-bottom-color: transparent;
+        }
+        @include for-md-mob{
+            font-size: 22px;
+            line-height: 30px;
+        }
+    }
+    &__tab + &__tab{
+        @include for-md{
+            margin-top: 10px;
         }
     }
     &__tab-container{
@@ -1240,6 +1407,10 @@ button{
         line-height: 36px;
         border-bottom: 1px solid #CAD8E3;
         cursor: pointer;
+        @include for-md-mob{
+            font-size: 20px;
+            line-height: 26px;
+        }
         
     }
     &__item{
@@ -1263,6 +1434,12 @@ button{
         b{
             font-weight: 500;
         }
+        img{
+            max-width: 100%;
+        }
+        @include for-md-mob{
+            padding: 13px 18px 20px;
+        }
         
     }
     &__icon-plus{
@@ -1272,6 +1449,10 @@ button{
         background-size: cover;
         background-repeat: no-repeat;
         transition: .3s;
+        flex-shrink: 0;
+        @include for-md-mob{
+            margin-left: 20px;
+        }
     }
     &__item-content{
         display: none;
@@ -1298,12 +1479,18 @@ button{
         }
         &--mb{
             margin-bottom: 62px;
+            @include for-md-mob{
+                margin-bottom: 20px;
+            }
         }
     }
     &__step{
         img{
             margin-top: 10px;
             margin-bottom: 40px;
+            @include for-md-mob{
+                margin-bottom: 20px;
+            }
         }
         a{
             color: $blue;
@@ -1317,9 +1504,4 @@ button{
     &.active{
         display: block;
     }
-}
-
-svg#icon-plus{
-    fill: $grey !important;
-
 }
