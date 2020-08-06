@@ -42,3 +42,44 @@ $('.nav-toggle').on('click', function(){
     $(this).toggleClass('opened')
     $('.menu').slideToggle()
 });
+
+$('.menu__list-link').on('click', function(e) {
+    
+    // $('.content').addClass('dn')
+
+});
+
+$('.menu__list-link--extract').on('click', function(e) { 
+    e.preventDefault(); 
+    $('.menu__list-link').removeClass('active')
+    $(this).addClass('active')
+    $('.content').addClass('dn')
+    $('.price').removeClass('dn')
+    $('.extracts').removeClass('dn')
+});
+
+$('.menu__list-link--questions').on('click', function(e) { 
+    e.preventDefault(); 
+    $('.menu__list-link').removeClass('active')
+    $(this).addClass('active')
+    $('.content').addClass('dn')
+    $('.questions').removeClass('dn')
+    $('.how-work').removeClass('dn')
+    $('.location').removeClass('dn')
+});
+
+
+$('.tab').on('click', function(e){
+    e.preventDefault(); 
+  
+    $($(this).siblings()).removeClass('active');
+    $($(this).parent().siblings().find('.tab-content')).removeClass('active');
+  
+    $(this).addClass('active')
+    $($(this).attr('href')).addClass('active');
+  
+  });
+  $('.questions__item-title').on('click', function(){
+    $(this).parent().toggleClass('active')
+    $(this).next().slideToggle()
+  });

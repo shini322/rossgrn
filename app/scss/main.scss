@@ -63,6 +63,9 @@ button{
     color: $white;
     cursor: pointer;
 }
+.dn{
+    display: none;
+}
 .container{
     padding: 0 15px;
     margin: 0 auto;
@@ -287,6 +290,9 @@ button{
         &:hover{
             color: $green;
         }
+    }
+    &__list-link.active{
+        color: $grey;
     }
     &__basket-img{
         margin-right: 9px;
@@ -972,6 +978,7 @@ button{
 }
 .footer{
     padding: 70px 47px 62px;
+    margin-top: 40px;
     background-color: #F4F8FC;
     @include for-md-mob{
         padding: 40px 20px 24px;
@@ -1151,4 +1158,166 @@ button{
 }
 .search-result.show-result{
     display: block;
+}
+
+
+.price{
+    max-width: 1342px;
+    margin: 84px auto 40px;
+    padding: 50px 0 40px;
+    background-color: #F4F8FC;
+    &__title{
+        text-align: center;
+    }
+    &__subtitle{
+        margin-top: 13px;
+        font-size: 16px;
+        line-height: 26px;
+        text-align: center;
+    }
+    &__row{
+        display: flex;
+        justify-content: space-around;
+        padding: 28px 50px;
+        margin-top: 31px;
+        box-shadow: 0px 12px 32px rgba(31, 38, 45, 0.15);
+        border-radius: 10px;
+        background-color: $white;
+    }
+    &__item{
+        text-align: center;
+    }
+    &__item-total{
+        margin-bottom: 14px;
+        font-size: 14px;
+        line-height: 22px;
+        color: $grey;
+    }
+    &__item-price{
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 26px;
+    }
+}
+
+.questions{
+    max-width: 1342px;
+    margin: 103px auto 0;
+    padding: 31px 67px;
+    background-color: #F4F8FC;
+    &__title{
+        text-align: center;
+    }
+    &__tabs{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 28px;
+        padding: 16px 73px;
+        background-color: $white;
+    }
+    &__tab{
+        font-size: 24px;
+        line-height: 32px;
+        border-bottom: 1px dashed #1A96F0;
+        &.active{
+            color: $grey;
+            border-bottom-color: transparent;
+        }
+    }
+    &__tab-container{
+        margin-top: 40px;
+    }
+    &__item-title{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-bottom: 21px;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 36px;
+        border-bottom: 1px solid #CAD8E3;
+        cursor: pointer;
+        
+    }
+    &__item{
+        padding: 13px 40px 20px;
+        transition: .3s;
+        &.active{
+            background-color: $white;
+            box-shadow: 0px 12px 32px rgba(31, 38, 45, 0.15);
+            border-radius: 10px;
+            .questions__item-title{
+                border-bottom-color: transparent;
+            }
+            .questions__icon-plus{
+                background-image: url(../images/icons/plus-close.svg);
+                transform: rotate(90deg);
+            }
+        }
+        & + &{
+            margin-top: 20px;
+        }
+        b{
+            font-weight: 500;
+        }
+        
+    }
+    &__icon-plus{
+        width: 18px;
+        height: 18px;
+        background-image: url(../images/icons/plus.svg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        transition: .3s;
+    }
+    &__item-content{
+        display: none;
+        margin-top: 10px;
+    }
+    p + p{
+        margin: 1em 0;
+    }
+    &__img{
+        &--center{
+            display: block;
+            margin: 0 auto;
+        }
+    }
+    &__text{
+        margin-top: 10px;
+        font-size: 12px;
+        line-height: 20px;
+        &--center{
+            text-align: center;
+        }
+        &--grey{
+            color: $grey;
+        }
+        &--mb{
+            margin-bottom: 62px;
+        }
+    }
+    &__step{
+        img{
+            margin-top: 10px;
+            margin-bottom: 40px;
+        }
+        a{
+            color: $blue;
+        }
+    }
+    
+    
+}
+.tab-content{
+    display: none;
+    &.active{
+        display: block;
+    }
+}
+
+svg#icon-plus{
+    fill: $grey !important;
+
 }

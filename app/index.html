@@ -12,52 +12,55 @@
 <body>
     <!--start wrapper-->
     <div class="wrapper" id="wrapper">
-        <!--start hero-->
-        <div class="hero">
 
-            <!--start header-->
-            <header class="header" id="header">
-                <a class="logo" href="/">
-                    <img class="logo__img" src="images/logo.svg" alt="">
-                    <span class="logo__text">
-                        Россегрн
-                    </span>
-                </a>
-                <nav class="menu">
-                    <ul class="menu__list">
-                        <li class="menu__list-item">
-                            <a href="#" class="menu__list-link">
-                                Выписки и цены
-                            </a>
-                        </li>
-                        <li class="menu__list-item">
-                            <a href="#" class="menu__list-link">
-                                Вопросы и ответы
-                            </a>
-                        </li>
-                        <li class="menu__list-item">
-                            <a href="#" class="menu__list-link">
-                                Мои заказы
-                            </a>
-                        </li>
-                        <li class="menu__list-item menu__list-item--basket">
-                            <a href="#" class="menu__list-link">
-                                <img class="menu__basket-img" src="images/basket.svg" alt="">
-                                <span>Корзина</span>
-                            </a>
-                        </li>
-                    </ul>
-                </nav>
-                <a class="basket-mobile" href="#">
-                    <img class="basket-mobile__img" src="images/basket.svg" alt="">
-                </a>
-                <button class="nav-toggle">
-                    <span class="bar-top"></span>
-                    <span class="bar-mid"></span>
-                    <span class="bar-bot"></span>
-                  </button>
-            </header>
-            <!--end header-->
+        <!--start header-->
+        <header class="header" id="header">
+            <a class="logo" href="/">
+                <img class="logo__img" src="images/logo.svg" alt="">
+                <span class="logo__text">
+                    Россегрн
+                </span>
+            </a>
+            <nav class="menu">
+                <ul class="menu__list">
+                    <li class="menu__list-item">
+                        <a href="#" class="menu__list-link menu__list-link--extract">
+                            Выписки и цены
+                        </a>
+                    </li>
+                    <li class="menu__list-item">
+                        <a href="#" class="menu__list-link menu__list-link--questions">
+                            Вопросы и ответы
+                        </a>
+                    </li>
+                    <li class="menu__list-item menu__list-link--orders">
+                        <a href="#" class="menu__list-link">
+                            Мои заказы
+                        </a>
+                    </li>
+                    <li class="menu__list-item menu__list-item--basket">
+                        <a href="#" class="menu__list-link menu__list-link--basket">
+                            <img class="menu__basket-img" src="images/basket.svg" alt="">
+                            <span>Корзина</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <a class="basket-mobile" href="#">
+                <img class="basket-mobile__img" src="images/basket.svg" alt="">
+            </a>
+            <button class="nav-toggle">
+                <span class="bar-top"></span>
+                <span class="bar-mid"></span>
+                <span class="bar-bot"></span>
+            </button>
+        </header>
+        <!--end header-->
+
+        <!--start hero-->
+        <div class="hero content">
+
+
             <div class="hero__inner">
                 <div class="container">
                     <h2 class="section-title hero__title">
@@ -88,7 +91,7 @@
                 </div>
             </div>
             <!--start advantages-->
-            <div class="advantages">
+            <div class="advantages content">
                 <div class="advantages__row">
                     <div class="advantages__container">
                         <div class="advantages__item">
@@ -177,7 +180,7 @@
                                             620 кв. м.
                                         </div>
                                     </div>
-                                    
+
                                 </div>
                             </div>
                             <div class="search-result__container">
@@ -193,7 +196,7 @@
                                             Ранее учтенный
                                         </div>
                                     </div>
-                                    
+
                                 </div>
                             </div>
                             <div class="search-result__container">
@@ -209,7 +212,7 @@
                                             -
                                         </div>
                                     </div>
-                                    
+
                                 </div>
                             </div>
                         </div>
@@ -227,7 +230,8 @@
                                     Адрес
                                 </td>
                                 <td class="search-result__td">
-                                    р-н Туапсинский, тер Небугское сельское поселение, с Агой, тер СТ Машиностроитель, д уч.№198
+                                    р-н Туапсинский, тер Небугское сельское поселение, с Агой, тер СТ Машиностроитель, д
+                                    уч.№198
                                 </td>
                             </tr>
                             <tr class="search-result__tr">
@@ -264,7 +268,7 @@
                             </tr>
                         </table>
                     </div>
-                    
+
                 </div>
             </div>
             <!--end search-result-->
@@ -280,8 +284,310 @@
         <!--start main-->
         <main class="main" id="main">
 
+            <!--start price-->
+            <section class="price content dn">
+                <div class="container">
+                    <h2 class="section-title price__title">
+                        Цена зависит от количества заказанных вписок
+                    </h2>
+                    <div class="price__subtitle">
+                        Закажите срочную выписку из Росреестра за 5 минут на квартиру, дом или земельный участок
+                        в форматах PDF, ZIP с электронной подписью Росреестра
+                    </div>
+                    <div class="price__row">
+                        <div class="price__item">
+                            <div class="price__item-total">
+                                1-2 выписки
+                            </div>
+                            <div class="price__item-price">
+                                249 ₽
+                            </div>
+                        </div>
+                        <div class="price__item">
+                            <div class="price__item-total">
+                                3-10 выписок
+                            </div>
+                            <div class="price__item-price">
+                                199 ₽
+                            </div>
+                        </div>
+                        <div class="price__item">
+                            <div class="price__item-total">
+                                11-50 выписок
+                            </div>
+                            <div class="price__item-price">
+                                149 ₽
+                            </div>
+                        </div>
+                        <div class="price__item">
+                            <div class="price__item-total">
+                                51-100 выписок
+                            </div>
+                            <div class="price__item-price">
+                                99 ₽
+                            </div>
+                        </div>
+                        <div class="price__item">
+                            <div class="price__item-total">
+                                Больше 100 выписок
+                            </div>
+                            <div class="price__item-price">
+                                59 ₽
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!--end price-->
+
+            <!--start price-->
+            <section class="questions content dn">
+                <div class="container">
+                    <h2 class="section-title questions__title">
+                        Вопросы и ответы
+                    </h2>
+                    <div class="questions__inner">
+                        <div class="questions__tabs">
+                            <a class="questions__tab tab active" href="#questions1">
+                                Вопросы о выписке
+                            </a>
+                            <a class="questions__tab tab" href="#questions2">
+                                Оформление заказа
+                            </a>
+                            <a class="questions__tab tab" href="#questions3">
+                                Работа сайта
+                            </a>
+                        </div>
+                        <div class="questions__tab-container">
+                            <div id="questions1" class="questions__tab-content tab-content active">
+                                <div class="questions__item">
+                                    <div class="questions__item-title">
+                                        Как быстро я получу выписку?
+                                        <div class="questions__icon-plus"></div>
+                                    </div>
+                                    <div class="questions__item-content">
+                                        <p>Сроки зависят от загруженности сайта и количества обрабатываемых заявок. Если
+                                            выписка не получена, то это значит, что запрос не был обработан Росреестром.
+                                            Максимальный срок обработки запроса составляет три дня (согласно п.9 ст. 62
+                                            закона No 218-ФЗ). Если выписка не будет получена по окончание срока, то
+                                            деньги вернутся.
+                                        </p>
+                                        <p>
+                                            Проверьте почту, не забудьте про папку "Спам" и "Рассылки". Возможно,
+                                            почтовый сервис ошибочно определил письмо в неподходящую категорию. Так как
+                                            файлы в больших количествах отправляются ежедневно, вероятность не заметить
+                                            письмо и не прочесть велика. С помощью нашего сервиса вы можете
+                                            самостоятельно следить за заказом и степенью его готовности после обработки
+                                            Росреестром. Чтобы получить выписку, выберите "Мои заказы" (кнопка находится
+                                            в панели меню).
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="questions__item">
+                                    <div class="questions__item-title">
+                                        Почему в полученной выписке нет сведений о собственнике?
+                                        <div class="questions__icon-plus"></div>
+                                    </div>
+                                    <div class="questions__item-content">
+                                        <img class="questions__img--center" src="images/questions/screen1.jpg" alt="">
+                                        <p class="questions__text questions__text--center questions__text--grey">
+                                            (Если сведений о собственнике в ЕГРН нет, то в графе «Особые отметки»
+                                            указывается <br> «Сведения, необходимы для заполнения раздела 2
+                                            отсутствуют»)
+                                        </p>
+                                        <p>
+                                            Вся информация, находящаяся в выписке, берется из актуальной на данный
+                                            момент
+                                            базы Росреестра. В системе есть данные только по сделкам, заключённым до
+                                            наступления 1998. При этом информация доступна исключительно о
+                                            приватизированных
+                                            объектах, находящихся в распоряжении законных владельцев.
+                                        </p>
+                                        <p>
+                                            Наиболее частые ситуации, которые способствуют отсутствию информации о
+                                            правообладателях:
+                                            1. Отсутствует регистрация прав владельца.
+                                        </p>
+                                        <p>
+                                            В основном, препятствием служит то, что владелец не думал о необходимости
+                                            регистрации своих прав на имущество в Росреестре. Рассмотрим следующую
+                                            ситуацию.
+                                            Человек получает от государства земельный участок, становится членом
+                                            некоммерческого садового товарищества. У него есть документы, подтверждающие
+                                            право на недвижимость (свидетельство или членская книжка НСТ). Человек
+                                            наивно
+                                            полагает, что собственность находится в его законном владении. Только вот в
+                                            документах госреестра он не укажется как собственник, хотя имущество
+                                            действительно будет находиться на официальном кадастровом учёте.
+                                        </p>
+                                        <p>
+                                            2. Новые действия с объектом не предпринимались с 31 января 1998 года.
+                                        </p>
+                                        <p>
+                                            Так как в базе находятся лишь зарегистрированные после окончания 1998 года
+                                            данные, то вся нужная информация, касающаяся собственников, до 1998 года
+                                            запрашивается в Бюро технической инвентаризации, Департаменте городского
+                                            имущества или в Департаменте жилищной политики и жилищного фонда.
+                                        </p>
+                                        <p>
+                                            3. Выписка на коммунальную квартиру.
+                                        </p>
+                                        <p>
+                                            Несмотря на то, что каждому собственнику принадлежит та или иная часть
+                                            квартиры,
+                                            она, являясь объектом недвижимости, не сможет содержать записи о владельце.
+                                            Поэтому производить заказ выписок следует для каждой комнаты отдельно.
+                                        </p>
+                                        <p>
+                                            4. Недавно оформленные права на недвижимость.
+                                        </p>
+                                        <p>
+                                            Чтобы база ЕГРН обновилась, требуется время, поэтому произведенные две-три
+                                            недели назад сделки могут не отображаться. Это происходит из-за того, что
+                                            местные офисы Росреестра сначала передают данные в Москву. Следовательно,
+                                            данные
+                                            и информация появляется в онлайн-базе ЕГРН немного позже.
+                                        </p>
+                                        <p>
+                                            5. Наследство.
+                                        </p>
+                                        <p>
+                                            Подразумевается, что в выписке правообладатели не указаны или указаны, но
+                                            неверно. Произойти это может по многим причинам. Рассмотрим несколько из
+                                            них.
+                                            Во-первых, собственник мог законно приватизировать жилплощадь прежде, чем
+                                            наступил 1998 год. Затем, должной регистрации прав не последовало. Спустя
+                                            время
+                                            квартира переходит кому-либо в качестве наследства. Новый владелец тоже не
+                                            регистрирует собственность. Несмотря на то, что он имеет все основания на
+                                            получение наследства, в выписке не укажут ни одного владельца.
+                                            Во-вторых, в необходимом документе может присутствовать исключительно
+                                            предыдущий
+                                            владелец. Здесь он смог зарегистрировать имущество в Росреестре, но вот его
+                                            наследник этого не сделал. В такой ситуации в нужной выписке отобразится
+                                            только
+                                            предыдущий владелец.
+                                        </p>
+                                        <p>
+                                            6. По одному адресу существует не один номер кадастра.
+                                        </p>
+                                        <p>
+                                            Несостыковка в базе реестра могла возникнуть, как во время разделения
+                                            объекта,
+                                            так и из-за сложного адреса, который был указан неправильно.
+                                        </p>
+                                        <p>
+                                            7. Ошибка сайта или неточность номера кадастра.
+                                        </p>
+                                        <p>
+                                            Иногда владелец оказывается невиновным в отсутствии верных и актуальных
+                                            сведений
+                                            в реестре Ошибки происходят из-за проведенных кадастровых работ или при
+                                            передаче
+                                            информации из БТИ. Даже в самом Росреестре возникают сбои. Информация,
+                                            которая
+                                            должна поступить в реестр недвижимости из этого портала, может оказаться
+                                            неверной. При обнаружении несоответствий необходимо написать обращение в
+                                            Росреестр или МФЦ. После обращения будут исправлены и технические, и
+                                            кадастровые
+                                            ошибки.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="questions__item">
+                                    <div class="questions__item-title">
+                                        Как убедиться в подлинности и наличии ЭЦП?
+                                        <div class="questions__icon-plus"></div>
+                                    </div>
+                                    <div class="questions__item-content">
+                                        <p class="questions__text--mb">
+                                            Согласно нормативным актам проверка любых ЭЦП должна осуществляться в
+                                            удостоверяющих центрах, прошедших аккредитацию. К ним относится сайт
+                                            Госуслуг и некоторые другие.
+                                        </p>
+                                        <p>
+                                            <b>Как осуществить проверку:</b>
+                                        </p>
+                                        <div class="questions__step">
+                                            <p>
+                                                1. С почты или сайта (раздел <b>«Мои заказы»</b> ) скачиваем архив, где
+                                                находится выписка.
+                                            </p>
+                                            <img src="images/questions/screen2.jpg" alt="">
+                                        </div>
+                                        <div class="questions__step">
+                                            <p>
+                                                2. Распаковываем <b>zip-файл</b>.
+                                            </p>
+                                            <img src="images/questions/screen3.jpg" alt="">
+                                        </div>
+                                        <div class="questions__step">
+                                            <p>
+                                                3. Открываем Госуслуги здесь: <a
+                                                    href="#">https://www.gosuslugi.ru/eds</a>.
+                                            </p>
+                                            <img src="images/questions/screen4.jpg" alt="">
+                                        </div>
+                                        <div class="questions__step">
+                                            <p>
+                                                4. В распакованном архиве находим объект названием
+                                                <b>«out_docs_*****************.zip»</b>, выбираем его и вставляем в поле
+                                                <b>«Электронный документ, подлинность подписи которого нужно
+                                                    проверить»</b>.
+                                            </p>
+                                            <img src="images/questions/screen5.jpg" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="questions__item">
+                                    <div class="questions__item-title">
+                                        Почему в выписке нет печати и подписи?
+                                        <div class="questions__icon-plus"></div>
+                                    </div>
+                                    <div class="questions__item-content">
+
+                                        <p>
+                                            Важно обратить внимание на различие электронных и бумажных справок и выписок, полученных из ЕГРН. Выписка, полученная электронно, имеет не обычную, а электронно-цифровую подпись Росреестра. Она располагается в обособленном ZIP-документе, имеет SIG формат. Такая ЭЦП — официальная подпись Росреестра. Правовая сила электронной и бумажной выписки равнозначна, поэтому ЭЦП успешно идентифицируется многими организациями, которым выписку необходима.
+                                            выписок, полученных из ЕГРН. Выписка, полученная электронно, имеет не
+                                            обычную, а электронно-цифровую подпись Росреестра. Она располагается в
+                                            обособленном ZIP-документе, имеет SIG формат. Такая ЭЦП — официальная
+                                            подпись Росреестра. Правовая сила электронной и бумажной выписки
+                                            равнозначна, поэтому ЭЦП успешно идентифицируется многими организациями,
+                                            которым выписку необходима.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="questions__item">
+                                    <div class="questions__item-title">
+                                        В чем отличия электронной выписки из ЕГРН от обычной бумажной?
+                                        <div class="questions__icon-plus"></div>
+                                    </div>
+                                    <div class="questions__item-content">
+
+                                        <p>
+                                            Сейчас доступно 2 варианта получения необходимого документа — электронный и бумажный. Их правовая сила одинакова. Чтобы заказать бумажную справку, обращаемся в ближайший офис МФЦ/Росреестра, предварительно узнав приемные часы. Время готовности справок варьируется от двух до семи суток. Намного оперативнее выписка ЕГРН поступит к заказчику, если запросить ее онлайн. Уполномоченный сотрудник регистрационного органа поставит электронную подпись, которая и будет подтверждать достоверность документа. Подводя итог, получаем, что электронная выписка — это лучший вариант, ведь ее можно заказать без сложностей и получить намного быстрее, чем бумажный аналог.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="questions2" class="questions__tab-content tab-content">
+                                content2
+                            </div>
+                            <div id="questions3" class="questions__tab-content tab-content">
+                                content3
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+            <!--end price-->
+
+
             <!--start extracts-->
-            <section class="extracts">
+            <section class="extracts content">
                 <div class="container">
                     <h2 class="section-title extracts__title">Виды выписок из Егрн</h2>
                     <h2 class="section-title extracts__title extracts__title--show-result">Выберите тип выписки</h2>
@@ -301,12 +607,13 @@
                                             обременения, дата
                                             регистрации прав, расширенные технические данные объекта.
                                         </p>
-                                        <p class="extracts-item__desc extracts-item__desc--grey extracts-item__desc--show-result">
+                                        <p
+                                            class="extracts-item__desc extracts-item__desc--grey extracts-item__desc--show-result">
                                             Основные данные, информация о наличии обременений, ФИО владельца, если есть
                                         </p>
                                     </div>
                                 </div>
-                                
+
 
                                 <a class="extracts-item__link" href="#">
                                     <img class="extracts-item__link-img" src="images/icons/list.svg" alt="">
@@ -334,15 +641,17 @@
                                             О переходе прав
                                         </h5>
                                         <p class="extracts-item__desc">
-                                            Полная история собственников недвижимости с 1998 года. Текущий и все предыдущие
+                                            Полная история собственников недвижимости с 1998 года. Текущий и все
+                                            предыдущие
                                             собственники, дата регистрации возникновения и прекращения их прав.
                                         </p>
-                                        <p class="extracts-item__desc extracts-item__desc--grey extracts-item__desc--show-result">
+                                        <p
+                                            class="extracts-item__desc extracts-item__desc--grey extracts-item__desc--show-result">
                                             История собственников (если есть) по сделкам, совершенным с 1998 года
                                         </p>
                                     </div>
                                 </div>
-                                
+
 
                                 <a class="extracts-item__link" href="#">
                                     <img class="extracts-item__link-img" src="images/icons/list.svg" alt="">
@@ -377,7 +686,7 @@
                                         </p>
                                     </div>
                                 </div>
-                                
+
 
                                 <a class="extracts-item__link" href="#">
                                     <img class="extracts-item__link-img" src="images/icons/list.svg" alt="">
@@ -403,7 +712,7 @@
             <!--start extracts-->
 
             <!--start how-work-->
-            <section class="how-work">
+            <section class="how-work content">
                 <h2 class="section-title how-work__title">
                     Как работает наш сервис
                 </h2>
@@ -416,14 +725,15 @@
                                     Поиск объекта
                                 </div>
                                 <p class="how-work-item__text">
-                                    Введите кадастровый номер или точный адрес объекта, в окне результатов поиска введите
+                                    Введите кадастровый номер или точный адрес объекта, в окне результатов поиска
+                                    введите
                                     свою электронную почту ⟶
                                 </p>
                                 <a class="how-work-item__find" href="#">
                                     Найти объект
                                 </a>
                             </div>
-                            
+
                         </div>
                     </div>
                     <div class="how-work__container">
@@ -438,7 +748,7 @@
                                     составляет <span>всего 249 рублей</span>
                                 </p>
                             </div>
-                            
+
 
                         </div>
                     </div>
@@ -450,11 +760,12 @@
                                     Получение заказа
                                 </div>
                                 <p class="how-work-item__text">
-                                    После получения ответа из официальной базы Росреестра, выписка будет отправлена вам на
+                                    После получения ответа из официальной базы Росреестра, выписка будет отправлена вам
+                                    на
                                     почту в форматах <span>PDF, ZIP с ЭЦП Росреестра</span>
                                 </p>
                             </div>
-                            
+
 
                         </div>
                     </div>
@@ -463,7 +774,7 @@
             <!--end how-work-->
 
             <!--start location-->
-            <section class="location">
+            <section class="location content">
                 <div class="container">
                     <div class="location__inner">
                         <h2 class="section-title location__title title--underline   ">
@@ -544,20 +855,20 @@
                     </p>
                     <p class="footer__text">
                         Сервис не является органом государственной власти <br>
-                         или ее ведомственным подразделением.
+                        или ее ведомственным подразделением.
                     </p>
                     <p class="footer__text">
                         Сервис не изготавливает выписки из ЕГРН, а оказывает <br>
-                         услугу онлайн-заказа выписок из Росреестра.
+                        услугу онлайн-заказа выписок из Росреестра.
                     </p>
                 </div>
             </div>
         </footer>
         <!--end footer-->
 
-
     </div>
     <!--end wrapper-->
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="js/libs.min.js"></script>
     <script src="js/main.js"></script>
