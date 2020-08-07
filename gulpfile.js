@@ -26,7 +26,6 @@ gulp.task('scss', function(){
 gulp.task('css', function(){
   return gulp.src([
     'node_modules/normalize.css/normalize.css',
-    'node_modules/@fancyapps/fancybox/dist/jquery.fancybox.min.css'
   ])
     .pipe(concat('_libs.scss'))
     .pipe(gulp.dest('app/scss'))
@@ -46,7 +45,6 @@ gulp.task('script', function(){
 gulp.task('js', function(){
   return gulp.src([
     'node_modules/jquery-validation/dist/jquery.validate.js',
-    'node_modules/@fancyapps/fancybox/dist/jquery.fancybox.min.js'
     // 'node_modules/ion-rangeslider/js/ion.rangeSlider.min.js',
     // 'node_modules/jquery-form-styler/dist/jquery.formstyler.min.js',
   ])

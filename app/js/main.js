@@ -43,7 +43,7 @@ $('.nav-toggle').on('click', function(){
 });
 
 $('.menu__list-link').on('click', function(e) {
-    $('.extracts').removeClass('show-result') 
+    $('.extracts').removeClass('show-result')
     var w =  document.body.clientWidth; 
     if (w <=  '650' )
     {
@@ -60,6 +60,7 @@ $('.menu__list-link--extract').on('click', function(e) {
     $('.content').addClass('dn')
     $('.price').removeClass('dn')
     $('.extracts').removeClass('dn')
+    $('.extracts').addClass('max-width')
     // $('#content').load('index.html #content');
 });
 
@@ -73,6 +74,7 @@ $('.menu__list-link--questions').on('click', function(e) {
     $('.questions').removeClass('dn')
     $('.how-work').removeClass('dn')
     $('.location').removeClass('dn')    
+    $('.extracts').removeClass('max-width')
 });
 
 
@@ -93,5 +95,3 @@ $('.tab').on('click', function(e){
     $(this).next().slideToggle()
   });
 
-
-  $(".fancybox").fancybox();
