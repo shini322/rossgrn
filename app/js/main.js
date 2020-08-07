@@ -33,17 +33,21 @@ $('.search-form__button').on('click', function(){
     $('.advantages').addClass('show-result')
     $('.search-result').addClass('show-result')
     $('.extracts').addClass('show-result')
-    // $('.extracts__container').addClass('show-result')
+    $('.extract-form').removeClass('dn')
     // $('.extracts-item').addClass('show-result')
 });
 
 $('.nav-toggle').on('click', function(){
     $(this).toggleClass('opened')
     $('.menu').slideToggle()
+    $('.basket-mobile').toggleClass('dn')
+
+    
 });
 
 $('.menu__list-link').on('click', function(e) {
     $('.extracts').removeClass('show-result')
+    $('.extract-form').addClass('dn')
     var w =  document.body.clientWidth; 
     if (w <=  '650' )
     {
@@ -59,8 +63,7 @@ $('.menu__list-link--extract').on('click', function(e) {
     $(this).addClass('active')
     $('.content').addClass('dn')
     $('.price').removeClass('dn')
-    $('.extracts').removeClass('dn')
-    $('.extracts').addClass('max-width')
+    $('.extracts').removeClass('dn').addClass('max-width')
     // $('#content').load('index.html #content');
 });
 

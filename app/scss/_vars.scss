@@ -2,6 +2,7 @@ $black: #353A40;
 $blue: #1A96F0;
 $green: #4FCB44;
 $grey: #A6AEB7;
+$red: #F47272;
 $white: #fff;
 // $resolution: 1920;
 // $resolution3:375;
@@ -67,9 +68,9 @@ $white: #fff;
   @mixin for-md-mob{
     @media (max-width: 600px) { @content; }
   }
-//   @mixin for-tiny-mob {
-//     @media (max-width: 500px) { @content; }
-//   }
+  @mixin for-tiny-mob {
+    @media (max-width: 500px) { @content; }
+  }
 
 //   @mixin for-min-mob {
 //     @media (min-width: 650px) { @content; }

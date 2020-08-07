@@ -238,6 +238,7 @@ button{
     
 }
 .basket-mobile{
+    position: relative;
     display: none;
     align-items: center;
     justify-content: center;
@@ -245,6 +246,21 @@ button{
     margin-right: 21px;
     @include for-md-mob{
         display: flex;
+    }
+    &__total{
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        right: -6px;
+        top: -4px;
+        width: 16px;
+        height: 16px;
+        border-radius: 50%;
+        background-color: $red;
+        font-size: 12px;
+        line-height: 16px;
+        color: $white;
     }
 }
 .menu{
@@ -260,7 +276,7 @@ button{
         background-color: $white;
         border-bottom: 1px solid $blue;
         border-radius: 0 0 10px 10px;
-        top: 0;
+        top: 64px;
         left: 0;
     }
     &__list{
@@ -270,21 +286,28 @@ button{
             flex-direction: column;
         }
     }
+    &__basket-img-block{
+        position: relative;
+        margin-right: 18px;
+        width: 33px;
+        height: 26px;
+    }
     &__list-item{
         font-size: 16px;
         line-height: 26px;
         color: $blue;
         &--basket{
-            @include for-md-mob{
-                display: none;
-            }
+            position: relative;
+            // @include for-md-mob{
+            //     display: none;
+            // }
         }
     }
     &__list-item + &__list-item{
         margin-left: 32px;
         @include for-md-mob{
             margin-left: 0;
-            margin-top: 20px;
+            margin-top: 40px;
         }
     }
     &__list-link{
@@ -293,6 +316,10 @@ button{
         transition: .3s;
         &:hover{
             color: $green;
+        }
+        @include for-md-mob{
+            font-size: 24px;
+            line-height: 22px;
         }
     }
     &__list-link.active{
@@ -510,6 +537,10 @@ button{
             text-align: center;
         }
     }
+    &__subtitle{
+        display: none;
+        margin-top: 5px;
+    }
     &__inner{
         display: flex;
         margin-top: 63px;
@@ -545,6 +576,7 @@ button{
     }
 }
 .extracts.show-result{
+    
     padding-top: 420px;
     @include for-md-mob{
         padding-top: 440px;
@@ -556,7 +588,11 @@ button{
             text-align: left;
         }
     }
+    .extracts__subtitle{
+        display: block;
+    }
     .extracts__inner{
+        display: none;
         margin-top: 19px;
         margin-right: 0;
     }
@@ -826,7 +862,261 @@ button{
         }
     }
 }
-
+.extract-form{
+    margin-top: 32px;
+    @include for-tiny-tablet{
+        margin-top: 12px;
+    }
+    &__item + &__item{
+        margin-top: 20px;
+        @include for-tiny-tablet{
+            margin-top: 10px;
+        }
+    }
+    &__button-block{
+        display: flex;
+        align-items: center;
+        margin-top: 30px;
+        @include for-sm{
+            flex-wrap: wrap;
+        }
+    }
+    &__button{
+        padding: 10px 0;
+        max-width: 279px;
+        width: 100%;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 26px;
+        @include for-sm{
+            max-width: 100%;
+            width: 60%;
+            order: 2;
+        }
+        @include for-tiny-mob{
+            max-width: 164px;
+            width: 100%;
+        }
+    }
+    &__payment{
+        margin-left: 28px;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 26px;
+        br{
+            display: none;
+        }
+        @include for-md{
+            br{
+                display: block;
+            }
+        }
+        @include for-sm{
+            margin-left: 0;
+            padding-left: 12px;
+            order: 3;
+            font-size: 14px;
+            line-height: 22px;
+        }
+    }
+    &__button-add{
+        display: flex;
+        padding: 11px 0 9px;
+        margin-left: auto;
+        justify-content: center;
+        background: linear-gradient(180deg, #B6CBDC 0%, #BDCFDF 100%);
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 26px;
+        max-width: 226px;
+        width: 100%;
+        white-space: nowrap;
+        border-bottom: 3px solid #9BB1C4;
+        @include for-sm{
+            margin-bottom: 23px;
+            max-width: 100%;
+            order: 1;
+        }
+    }
+    &__button-add-img{
+        margin-right: 10px;
+    }
+}
+.extract-form-item{
+    &__input{
+        display: none;
+    }
+    &__label{
+        position: relative;
+        display: flex;
+        padding: 9px 40px 9px 74px;
+        align-items: center;
+        border: 2px solid transparent;
+        box-shadow: 0px 12px 32px rgba(31, 38, 45, 0.15);
+        border-radius: 10px;
+        background-color: $white;
+        min-height: 100px;
+        cursor: pointer;
+        &:before{
+            content: "";
+            position: absolute;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            left: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+            border: 2px solid $grey;
+            background-image: url(../images/icons/check.svg);
+            background-size: 15.64px 12.66px;
+            background-position: center;
+            background-repeat: no-repeat;
+            @include for-sm{
+                left: 10px;
+            }
+            @include for-tiny-tablet{
+                top: 20px;
+                right: 20px;
+                left: auto;
+                transform: none;
+            }
+        }
+        @include for-sm{
+            padding-left: 53px;
+        }
+        @include for-tiny-tablet{
+            padding: 14px 20px 15px;
+            flex-wrap: wrap;
+        }
+    }
+    &__input:checked + &__label{
+        border-color: $blue;
+        &:before{
+            background-color: $blue;
+            border-color: $blue;
+        }
+    }
+    &__container{
+        display: flex;
+        align-items: center;
+        margin-left: auto;
+        @include for-tiny-tablet{
+            padding-right: 53px;
+            flex-direction: column-reverse;
+            order: 2;
+        }
+    }
+    &__img-block{
+        display: block;
+        width: 52px;
+        height: 75px;
+        filter: drop-shadow(0px 2px 3px rgba(18, 23, 24, 0.15));
+        flex-shrink: 0;
+        @include for-tiny-tablet{
+            order: 1;
+        }
+    }
+    &__img{
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
+    &__text-block{
+        margin-left: 20px;
+        max-width: 444px;
+        @include for-sm{
+            margin-left: 10px;
+        }
+        @include for-tiny-tablet{
+            margin-left: 0;
+            margin-top: 8px;
+            order: 3;
+        }
+    }
+    &__title{
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 26px;
+        @include for-tiny-tablet{
+            font-size: 16px;
+        }
+    }
+    &__subtitle{
+        font-size: 12px;
+        line-height: 20px;
+        color: $grey;
+        @include for-tiny-tablet{
+            font-size: 14px;
+            line-height: 20px;
+        }
+    }
+    &__link{
+        display: flex;
+        align-items: center;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 16px;
+        color: $blue;
+        &:hover{
+            text-decoration: underline;
+        }
+        @include for-md{
+            margin-left: 10px;
+        }
+        @include for-tiny-tablet{
+            margin-left: 0;
+        }
+    }
+    &__link-img{
+        margin-right: 10px;
+    }
+    &__price-block{
+        margin-left: 58px;
+        font-size: 18px;
+        line-height: 26px;
+        @include for-md{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            margin-left: 15px;
+            flex-shrink: 0;
+        }
+        @include for-tiny-tablet{
+            margin-bottom: 10px;
+            flex-direction: row;
+        }
+    }
+    &__price{
+        margin-left: 26px;
+        font-weight: 500;
+        @include for-md{
+           margin-left: 0;
+        }
+        @include for-tiny-tablet{
+            margin-left: 10px;
+        }
+    }
+    &__oldprice{
+        position: relative;
+        &::before{
+            content: "";
+            position: absolute;
+            width: calc(100% + 3px);
+            height: 2px;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            background-color: $grey;
+        }
+    }
+}
 
 .how-work{
     padding: 74px 15px 71px;
@@ -1215,11 +1505,15 @@ button{
         display: flex;
         flex-wrap: wrap;
         margin-bottom: 69px;
+        @include for-md{
+            justify-content: space-between;
+        }
         @include for-sm{
             margin-bottom: 30px;
-            justify-content: center;
+            
         }
-        @include for-md-mob{
+        @include for-tiny-tablet{
+            flex-direction: column;
             margin-bottom: 15px;
         }
         
@@ -1227,15 +1521,17 @@ button{
     }
     &__container{
         width: 33.33333%;
-        @include for-sm{
-            width: 50%;
-            margin-bottom: 20px;
+        @include for-md{
+            width: auto;
         }
        
     }
-    &__table{
-
+    &__container + &__container{
+        @include for-tiny-tablet{
+            margin-top: 20px;
+        }
     }
+    
     &__tr{
         &:last-child{
             .search-result__td{
@@ -1244,15 +1540,13 @@ button{
             }
         }
         &:first-child{
-            @include for-md-mob{
-                border-top: 1px solid #DAE2EA;
-            }
+            
         }
         @include for-md-mob{
             display: flex;
             padding: 10px;
             flex-direction: column;
-            border: 1px solid #DAE2EA;
+            border: none;
             border-top: none;
         }
     }
@@ -1273,6 +1567,7 @@ button{
             }
         }
         @include for-md-mob{
+            font-size: 14px;
             padding: 0;
             border: none;
             width: 100%;
@@ -1282,29 +1577,40 @@ button{
 .search-result-item{
     display: flex;
     align-items: center;
-    @include for-sm{
-        flex-direction: column;
-        text-align: center;
-    }
+    // @include for-sm{
+    //     flex-direction: column;
+    //     text-align: center;
+    // }
     &__img-block{
         margin-right: 17px;
         max-width: 60px;
         max-height: 60px;
-        @include for-sm{
-            margin-right: 0;
-            margin-bottom: 10px;
+        @include for-md{
+            max-width: 40px;
+            max-height: 40px;
+        }
+        @include for-tiny-tablet{
+            max-width: 30px;
+            max-height: 30px;
         }
     }
     &__img{
         display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
     }
     &__title{
         font-size: 14px;
         line-height: 22px;
         color: $grey;
+        @include for-tiny-tablet{
+            line-height: 18px;
+        }
     }
     &__value{
         font-weight: 500;
+        
     }
     
 }
@@ -1318,9 +1624,18 @@ button{
     margin: 84px auto 40px;
     padding: 50px 0 40px;
     background-color: #F4F8FC;
-    
+    @include for-sm{
+        padding-top: 35px;
+    }
+    @include for-md-mob{
+        padding-top: 30px;
+    }
     &__title{
         text-align: center;
+        @include for-md-mob{
+            padding: 0 20px;
+            text-align: left;
+        }
     }
     &__subtitle{
         margin-top: 13px;
@@ -1328,10 +1643,11 @@ button{
         line-height: 26px;
         text-align: center;
         @include for-md-mob{
-            padding: 0 10px;
+            padding: 0 20px;
             font-size: 14px;
             line-height: 24px;
-       }
+            text-align: left;
+        }
     }
     &__row{
         display: flex;
@@ -1347,8 +1663,8 @@ button{
             justify-content: center;
         }
         @include for-md-mob{
-            margin-top: 15px;
-            border-radius: 0;
+            margin: 15px 20px 0;
+            padding: 28px 43px;
         }
     }
     &__item{
@@ -1358,7 +1674,15 @@ button{
             margin-bottom: 20px;
         }
         @include for-md-mob{
-            width: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+        }
+    }
+    &__item + &__item{
+        @include for-md-mob{
+            margin-top: 20px;
         }
     }
     &__item-total{
@@ -1396,8 +1720,7 @@ button{
         padding: 16px 73px;
         background-color: $white;
         @include for-md{
-            flex-direction: column;
-            padding: 15px 0;
+            padding: 13px 48px;
         }
     }
     &__tab{
@@ -1413,11 +1736,11 @@ button{
             line-height: 30px;
         }
     }
-    &__tab + &__tab{
-        @include for-md{
-            margin-top: 10px;
-        }
-    }
+    // &__tab + &__tab{
+    //     @include for-md{
+    //         margin-top: 10px;
+    //     }
+    // }
     &__tab-container{
         margin-top: 40px;
     }
