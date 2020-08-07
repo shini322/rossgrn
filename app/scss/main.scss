@@ -1462,8 +1462,10 @@ button{
         & + &{
             margin-top: 20px;
         }
+        
         a{
             color: $blue;
+           
         }
         b{
             font-weight: 500;
@@ -1475,6 +1477,9 @@ button{
             padding: 13px 18px 20px;
         }
         
+    }
+    &__link-block{
+        text-align: center;
     }
     &__icon-plus{
         width: 18px;
@@ -1495,12 +1500,7 @@ button{
     p + p{
         margin: 1em 0;
     }
-    &__img{
-        &--center{
-            display: block;
-            margin: 0 auto;
-        }
-    }
+    
     &__text{
         margin-top: 10px;
         font-size: 12px;
