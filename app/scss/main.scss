@@ -197,13 +197,13 @@ button{
         flex-direction: column;
         align-items: center;
         padding: 12px 20px;
+        background-color: $white;
     }
     @include for-md-mob{
         padding: 12px 10px;
         flex-direction: row;
         align-items: center;
         justify-content: space-between;
-        background-color: $white;
     }
 }
 
@@ -270,12 +270,14 @@ button{
     }
 }
 .menu{
+    margin-left: 20px;
     @include for-md{
         margin-top: 17px;
     }
     @include for-md-mob{
         position: absolute;
         display: none;
+        margin-left: 0;
         padding: 40px 0;
         margin-top: 0;
         width: 100%;
@@ -283,6 +285,7 @@ button{
         background-color: $white;
         top: 64px;
         left: 0;
+
     }
     &__support{
         display: none;
@@ -461,12 +464,30 @@ button{
                 background-color: rgba($color: $grey, $alpha: .1);
                 
             }
+            @include for-md-mob{
+                padding-left: 10px;
+                font-size: 14px;
+                line-height: 22px;
+            }
+        }
+        li + li{
+            @include for-md-mob{
+                margin-top: 10px;
+            }
         }
         span{
             color: $blue;
         }
         &.db{
             display: block;
+        }
+
+        @include for-sm{
+            width: calc(100% + 63px);
+
+        }
+        @include for-md-mob{
+            padding: 19px 6px 13px 0;
         }
     }
     &__input{
@@ -484,6 +505,11 @@ button{
         //         display: block;
         //     }
         // }
+        @include for-md-mob{
+            padding-left: 10px;
+            font-size: 14px;
+            line-height: 26px;
+        }
     }
     &__input::placeholder{
         color: $grey;
@@ -1801,8 +1827,13 @@ button{
         margin-top: 28px;
         padding: 16px 73px;
         background-color: $white;
+        border-radius: 10px;
         @include for-md{
             padding: 13px 48px;
+        }
+        @include for-md-mob{
+            padding: 13px 20px;
+            margin: 28px 20px 0;
         }
     }
     &__tab{
@@ -1813,18 +1844,28 @@ button{
             color: $grey;
             border-bottom-color: transparent;
         }
-        @include for-md-mob{
-            font-size: 22px;
-            line-height: 30px;
+        @include for-md{
+            font-size: 18px;
         }
+        @include for-md-mob{
+            font-size: 14px;
+            line-height: 18px;
+            border-bottom: none;
+            span{
+                border-bottom: 1px dashed #1A96F0;
+            }
+        }
+        
     }
-    // &__tab + &__tab{
-    //     @include for-md{
-    //         margin-top: 10px;
-    //     }
-    // }
+    &__tab + &__tab{
+        margin-left: 15px;
+        
+    }
     &__tab-container{
         margin-top: 40px;
+        @include for-md-mob{
+            padding: 0 10px;
+        }
     }
     &__item-title{
         display: flex;
@@ -1840,15 +1881,20 @@ button{
         &:hover{
             color: $blue;
         }
+        @include for-md{
+            font-size: 18px;
+        }
         @include for-md-mob{
-            font-size: 20px;
-            line-height: 26px;
+            padding-bottom: 16px;
+            font-size: 14px;
+            line-height: 22px;
         }
         
     }
     &__item{
         padding: 13px 40px 20px;
         transition: .3s;
+        
         &.active{
             background-color: $white;
             box-shadow: 0px 12px 32px rgba(31, 38, 45, 0.15);
@@ -1866,6 +1912,9 @@ button{
         }
         & + &{
             margin-top: 20px;
+            @include for-md-mob{
+                margin-top: 2px;
+            }
         }
         
         a{
@@ -1879,7 +1928,7 @@ button{
             max-width: 100%;
         }
         @include for-md-mob{
-            padding: 13px 18px 20px;
+            padding: 13px 18px 15px;
         }
         
     }
@@ -1902,8 +1951,15 @@ button{
         display: none;
         margin-top: 10px;
     }
+    P{
+        
+        @include for-md-mob{
+            font-size: 14px;
+            line-height: 22px;
+        }
+    }
     p + p{
-        margin: 1em 0;
+        margin: 1em 0 0;
     }
     
     &__text{
@@ -1947,6 +2003,12 @@ button{
     margin-top: 100px;   
     padding: 34px 0 60px;
     background-color: #F4F8FC;
+    @include for-md{
+        margin-top: 130px;
+    }
+    @include for-md-mob{
+        margin-top: 80px;
+    }
     &__title{
         margin-bottom: 13px;
         text-align: center;
@@ -2407,6 +2469,12 @@ button{
     max-width: 1342px;
     margin: 100px auto 0;
     background-color: #F4F8FC;
+    @include for-md{
+        margin-top: 130px;
+    }
+    @include for-md-mob{
+        margin-top: 80px;
+    }
     &__header{
         display: flex;
         justify-content: space-between;
@@ -2420,14 +2488,21 @@ button{
     }
     &__title{
         padding-left: 40px;
+        @include for-md{
+            padding-left: 0;
+        }
+
         @include for-md-mob{
             margin-bottom: 7px;
-            padding-left: 0;
         }
     }
     &__profile-block{
         display: flex;
         align-items: center;
+        @include for-md-mob{
+            justify-content: space-between;
+            width: 100%;
+        }
     }
     &__profile{
         display: flex;
@@ -2438,12 +2513,18 @@ button{
         &:hover{
             text-decoration: underline;
         }
+        @include for-md-mob{
+            font-size: 14px;
+        }
     }
     &__avatar-block{
         margin-right: 8px;
         width: 23px;
         height: 23px;
         border-radius: 50%;
+        @include for-md-mob{
+            display: none;
+        }
     }
     &__log-out{
         display: flex;
@@ -2452,6 +2533,11 @@ button{
         color: $blue;
         &:hover{
             text-decoration: underline;
+        }
+        @include for-md-mob{
+            margin-left: auto;
+            font-size: 14px;
+
         }
     }
     &__log-out-img{
@@ -2478,6 +2564,9 @@ button{
     }
     &__text-block{
         padding-left: 40px;
+        @include for-md{
+            padding-left: 0;
+        }
         @include for-md-mob{
             padding: 0 20px;
         }
@@ -2523,6 +2612,9 @@ button{
         align-items: center;
         & >* + *{
             margin-left: 10px;
+        }
+        @include for-md-mob{
+            width: 100%;
         }
     }
     &__payment{
@@ -2729,7 +2821,11 @@ button{
         }
     }
     @include for-md{
+        margin-top: 130px;
         padding: 0;
+    }
+    @include for-md-mob{
+        margin-top: 80px;
     }
     &__img-block{
         width: 140px;
@@ -2794,7 +2890,11 @@ button{
     margin: 100px auto 0;
     padding: 0 47px;
     @include for-md{
+        margin-top: 130px;
         padding: 0;
+    }
+    @include for-md-mob{
+        margin-top: 80px;
     }
     &__inner{
         display: flex;
@@ -2846,7 +2946,11 @@ button{
     margin: 100px 0 auto;
     padding: 0 47px;
     @include for-md{
+        margin-top: 130px;
         padding: 0;
+    }
+    @include for-md-mob{
+        margin-top: 80px;
     }
     &__inner{
         padding: 35px 0 51px;
@@ -2860,6 +2964,8 @@ button{
             padding-left: 20px;
             margin-bottom: 13px;
             text-align: left;
+
+            
             
         }
     }

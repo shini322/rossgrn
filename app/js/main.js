@@ -48,6 +48,7 @@ $('.nav-toggle').on('click', function(){
 $('.menu__list-link').on('click', function(e) {
     $('.extracts').removeClass('show-result')
     $('.extract-form').addClass('dn')
+    $('.mobile-icons').fadeToggle ()
     var w =  document.body.clientWidth; 
     if (w <=  '650' )
     {
@@ -151,7 +152,8 @@ $('.search-form__input-list li').click(function(){
 $('.search-form__input-list li').click(function () {
     $('.address').removeClass('dn')
     $('.advantages').addClass('dn')
-    $('.extracts').addClass('dn').removeClass('show-result')
+    $('.extracts .container').addClass('dn').removeClass('show-result')
+    $('.extracts').removeClass('show-result')
     $('.search-result').removeClass('show-result')
 });
 
