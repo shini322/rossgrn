@@ -40,9 +40,7 @@ $('.search-form__button').on('click', function(){
 $('.nav-toggle').on('click', function(){
     $(this).toggleClass('opened')
     $('.menu').slideToggle()
-    $('.basket-mobile').toggleClass('dn')
-
-    
+    $('.mobile-icons').fadeToggle ()
 });
 
 $('.menu__list-link').on('click', function(e) {
@@ -81,6 +79,25 @@ $('.menu__list-link--questions').on('click', function(e) {
 });
 
 
+$('.menu__list-link--basket').on('click', function(e) { 
+    e.preventDefault(); 
+    $('.menu__list-link').removeClass('active')
+    $(this).addClass('active')
+    $('.content').addClass('dn')
+    $('.basket').removeClass('dn')
+    $('.how-work').removeClass('dn')
+});
+
+$('.menu__list-link--orders').on('click', function(e) { 
+    e.preventDefault(); 
+    $('.menu__list-link').removeClass('active')
+    $(this).addClass('active')
+    $('.content').addClass('dn')
+    $('.order-login').removeClass('dn')
+    $('.how-work').removeClass('dn')
+});
+
+
 $('.tab').on('click', function(e){
     e.preventDefault(); 
   
@@ -97,4 +114,51 @@ $('.tab').on('click', function(e){
     $(this).parent().toggleClass('active')
     $(this).next().slideToggle()
   });
+
+  $(".fancybox").fancybox({
+    
+    buttons: [
+        "zoom",
+        //"share",
+        "slideShow",
+        //"fullScreen",
+        //"download",
+        "thumbs",
+        "close"
+      ],
+      
+    btnTpl : {
+        close : '<button data-fancybox-close class="fancybox-close">закрыть<img src="images/icons/fancybox-close.svg" alt=""></button>'
+       }
+});
+
+$('.search-form__input').focus(function(){
+    $('.search-form__input-list').show()
+});
+$(document).on('click', function(e) {
+    if (!$(e.target).closest(".search-form__input").length) {
+      $('.search-form__input-list').hide();
+    }
+    e.stopPropagation();
+  });
+$('.search-form__input-list li').click(function(){
+    var text = $(this).text();
+    $('.search-form__input').val(text);
+});
+
+$('.search-form__input-list li').click(function () {
+    $('.address').removeClass('dn')
+    $('.advantages').addClass('dn')
+    $('.extracts .container').addClass('dn')
+    $('.extracts').addClass('address')
+
+});
+
+
+
+
+
+
+
+
 

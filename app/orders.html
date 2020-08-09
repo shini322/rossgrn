@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index</title>
+    <link rel="stylesheet" href="css/main.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!--start wrapper-->
+    <div class="wrapper" id="wrapper">
+
+        <!--start header-->
+        <header class="header" id="header">
+            <a class="logo" href="/">
+                <img class="logo__img" src="images/logo.svg" alt="">
+                <span class="logo__text">
+                    Россегрн
+                </span>
+            </a>
+            <nav class="menu">
+                <ul class="menu__list">
+                    <li class="menu__list-item">
+                        <a href="#" class="menu__list-link menu__list-link--extract">
+                            Выписки и цены
+                        </a>
+                    </li>
+                    <li class="menu__list-item">
+                        <a href="#" class="menu__list-link menu__list-link--questions">
+                            Вопросы и ответы
+                        </a>
+                    </li>
+                    <li class="menu__list-item ">
+                        <a href="#" class="menu__list-link menu__list-link--orders">
+                            Мои заказы
+                        </a>
+                    </li>
+                    <li class="menu__list-item">
+                        <a href="#" class="menu__list-link menu__list-link--basket">
+                            <div class="menu__basket-img-block">
+                                <div class="basket-mobile__total">2</div>
+                                <img class="menu__basket-img" src="images/basket.svg" alt="">
+                            </div>
+                            <span>Корзина</span>
+                        </a>
+                    </li>
+
+                </ul>
+                <div class="menu__support">
+                    Техническия поддержка сервиса: <br>
+                    <a class="menu__support-link" href="mailto:support@rossegrn.info">support@rossegrn.info</a>
+                </div>
+            </nav>
+            <a class="basket-mobile basket-tab" href="#">
+                <div class="basket-mobile__total">2</div>
+                <img class="basket-mobile__img" src="images/basket.svg" alt="">
+            </a>
+            <button class="nav-toggle">
+                <span class="bar-top"></span>
+                <span class="bar-mid"></span>
+                <span class="bar-bot"></span>
+            </button>
+        </header>
+        <!--end header-->
+
+
+        <!--start main-->
+        <main class="main" id="main">
+
+
+            <!--start orders-->
+            <section class="orders">
+                <div class="container">
+                    <div class="orders__header">
+                        <h2 class="orders__title section-title">Ваши заказы</h2>
+                        <div class="orders__profile-block">
+                            <a href="#" class="orders__profile">
+                                <div class="orders__avatar-block">
+                                    <img class="orders__avatar" src="images/user.svg" alt="">
+
+                                </div>
+                                alexandr5151@yandex.ru
+                            </a>
+                            <a href="#" class="orders__log-out">
+                                <img class="orders__log-out-img" src="images/log-out.svg" alt="">
+                                Выйти
+                            </a>
+                        </div>
+                    </div>
+                    <div class="orders__inner">
+                        <div class="order-item orders__item order-item--wait">
+                            <div class="order-item__text-block">
+                                <div class="order-item__title">
+                                    Заказ № 12341 <br>
+                                    <span class="order-item__title-date">13:45 01.02.20</span>
+                                    <span class="order-item__title-status">Ждёт оплаты</span>
+                                </div>
+                                <div class="order-item__button-block">
+                                    <a href="#" class="button button--blue order-item__payment">
+                                        оплатить
+                                    </a>
+                                    <button class="button order-item__delete">
+                                        удалить
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="order-item__info">
+                                <div class="order-item__info-title">
+                                    23:33:0907011:9 br <span class="order-item__info-title--type">Земельный
+                                        участок</span>
+                                </div>
+                                <div class="order-item__address">
+                                    р-н Туапсинский, тер Небугское сельское поселение, с Агой, тер СТ Машиностроитель, д
+                                    уч.№198
+                                </div>
+                                <div class="order-item__list">
+                                    <div class="order-item__list-item">
+                                        Об объекте недвижимости
+                                    </div>
+                                    <div class="order-item__list-item">
+                                        О переходе прав
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="order-item orders__item order-item--completed">
+                            <div class="order-item__text-block">
+                                <div class="order-item__title">
+                                    Заказ № 12283 <br>
+                                    <span class="order-item__title-date">13:45 01.02.20</span>
+                                    <span class="order-item__title-status">Завершен</span>
+                                </div>
+                                <div class="order-item__button-block">
+
+                                    <button class="button order-item__download-all">
+                                        скачать все выписки
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="order-item__info">
+                                <div class="order-item__info-title">
+                                    23:33:0907011:9 br <span class="order-item__info-title--type">Земельный
+                                        участок</span>
+                                </div>
+                                <div class="order-item__address">
+                                    р-н Туапсинский, тер Небугское сельское поселение, с Агой, тер СТ Машиностроитель, д
+                                    уч.№198
+                                </div>
+                                <div class="order-item__list">
+                                    <div class="order-item__list-item">
+                                        Об объекте недвижимости
+                                        <div class="order-item__list-item-buttons">
+                                            <button class="order-item__list-item-download">
+                                                pdf
+                                            </button>
+                                            <button class="order-item__list-item-download">
+                                                Zip
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="order-item__list-item">
+                                        О переходе прав
+                                        <div class="order-item__list-item-buttons">
+                                            <button class="order-item__list-item-download">
+                                                pdf
+                                            </button>
+                                            <button class="order-item__list-item-download">
+                                                Zip
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="order-item orders__item order-item--closed">
+                            <div class="order-item__text-block">
+                                <div class="order-item__title">
+                                    Заказ № 12283 <br>
+                                    <span class="order-item__title-date">13:45 01.02.20</span>
+                                    <span class="order-item__title-status">Отменен</span>
+                                </div>
+                                <div class="order-item__button-block">
+
+                                    <button class="button order-item__download-all">
+                                        скачать все выписки
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="order-item__info">
+                                <div class="order-item__info-title">
+                                    23:33:0907011:9 br <span class="order-item__info-title--type">Земельный
+                                        участок</span>
+                                </div>
+                                <div class="order-item__address">
+                                    р-н Туапсинский, тер Небугское сельское поселение, с Агой, тер СТ Машиностроитель, д
+                                    уч.№198
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+            <!--end orders-->
+
+            
+
+
+
+            <!--start how-work-->
+            <section class="how-work content">
+                <h2 class="section-title how-work__title">
+                    Как работает наш сервис
+                </h2>
+                <div class="how-work__inner">
+                    <div class="how-work__container">
+                        <div class="how-work-item how-work__item">
+                            <img class="how-work-item__img" src="images/how-work/1.svg" alt="">
+                            <div class="how-work-item__text-block">
+                                <div class="how-work-item__title">
+                                    Поиск объекта
+                                </div>
+                                <p class="how-work-item__text">
+                                    Введите кадастровый номер или точный адрес объекта, в окне результатов поиска
+                                    введите
+                                    свою электронную почту ⟶
+                                </p>
+                                <a class="how-work-item__find" href="#">
+                                    Найти объект
+                                </a>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="how-work__container">
+                        <div class="how-work-item how-work__item">
+                            <img class="how-work-item__img" src="images/how-work/2.svg" alt="">
+                            <div class="how-work-item__text-block">
+                                <div class="how-work-item__title">
+                                    Оплата заказа
+                                </div>
+                                <p class="how-work-item__text">
+                                    Стоимость выписки из ЕГРН (об основных характеристиках или о переходе прав)
+                                    составляет <span>всего 249 рублей</span>
+                                </p>
+                            </div>
+
+
+                        </div>
+                    </div>
+                    <div class="how-work__container">
+                        <div class="how-work-item how-work__item">
+                            <img class="how-work-item__img" src="images/how-work/3.svg" alt="">
+                            <div class="how-work-item__text-block">
+                                <div class="how-work-item__title">
+                                    Получение заказа
+                                </div>
+                                <p class="how-work-item__text">
+                                    После получения ответа из официальной базы Росреестра, выписка будет отправлена вам
+                                    на
+                                    почту в форматах <span>PDF, ZIP с ЭЦП Росреестра</span>
+                                </p>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!--end how-work-->
+
+        </main>
+        <!--end main-->
+
+        <!--start footer-->
+        <footer class="footer" id="footer">
+            <div class="footer__inner">
+                <div class="footer__container">
+                    <a class="logo footer__logo" href="/">
+                        <img class="logo__img" src="images/logo.svg" alt="">
+                        <span class="logo__text">
+                            Россегрн
+                        </span>
+                    </a>
+                    <div class="footer__text footer__subtitle footer__text--grey">
+                        Заказ выписок из ЕГРН,
+                        предоставление онлайн-сведений
+                    </div>
+                    <a class="footer__link" href="#">
+                        Обработка персональных данных
+                    </a>
+                    <a class="footer__link" href="#">
+                        Публичная оферта
+                    </a>
+                </div>
+                <div class="footer__container">
+                    <p class="footer__text">
+                        Время получения выписки: <br>
+                        от 5 минут до 3 суток
+                    </p>
+                    <p class="footer__text footer__text--medium">
+                        Время получения выписки зависит <br>
+                        от скорости обработки запроса Росреестром
+                    </p>
+                    <p class="footer__text">
+                        Если Вы не получили выписку <br>
+                        по прошествии 3 рабочих дней, <br>
+                        мы вернём Вам деньги
+                    </p>
+                </div>
+                <div class="footer__container">
+                    <p class="footer__text">
+                        Техническия поддержка сервиса: <br>
+                        <a class="footer__link" href="mailto:support@rossegrn.info">
+                            support@rossegrn.info
+                        </a>
+                    </p>
+                    <p class="footer__text">
+                        Сервис не является органом государственной власти <br>
+                        или ее ведомственным подразделением.
+                    </p>
+                    <p class="footer__text">
+                        Сервис не изготавливает выписки из ЕГРН, а оказывает <br>
+                        услугу онлайн-заказа выписок из Росреестра.
+                    </p>
+                </div>
+            </div>
+        </footer>
+        <!--end footer-->
+
+    </div>
+    <!--end wrapper-->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/libs.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
