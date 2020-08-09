@@ -82,6 +82,15 @@ $('.menu__list-link--questions').on('click', function(e) {
 });
 
 
+$('.basket-tab').on('click', function(e) { 
+    e.preventDefault(); 
+    $('.menu__list-link').removeClass('active')
+    $('.menu__list-link--basket').addClass('active')
+    $('.content').addClass('dn')
+    $('.basket').removeClass('dn')
+    $('.how-work').removeClass('dn')
+});
+
 $('.menu__list-link--basket').on('click', function(e) { 
     e.preventDefault(); 
     $('.menu__list-link').removeClass('active')
