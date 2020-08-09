@@ -47,13 +47,15 @@ $('.nav-toggle').on('click', function(){
 
 $('.menu__list-link').on('click', function(e) {
     $('.extracts').removeClass('show-result')
+    $('.extracts .container').removeClass('dn')
     $('.extract-form').addClass('dn')
-    $('.mobile-icons').fadeToggle ()
+    
     var w =  document.body.clientWidth; 
     if (w <=  '650' )
     {
         $('.menu').slideToggle()
         $('.nav-toggle').toggleClass('opened')
+        $('.mobile-icons').fadeToggle ()
     }
     
 });

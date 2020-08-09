@@ -1847,13 +1847,16 @@ button{
         @include for-md{
             font-size: 18px;
         }
-        @include for-md-mob{
-            font-size: 14px;
-            line-height: 18px;
+        @include for-sm{
             border-bottom: none;
             span{
                 border-bottom: 1px dashed #1A96F0;
             }
+        }
+        @include for-md-mob{
+            font-size: 14px;
+            line-height: 18px;
+            
         }
         
     }
