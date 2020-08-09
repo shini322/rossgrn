@@ -30,10 +30,12 @@ window.onload  = changeCssInd;
 
 
 $('.search-form__button').on('click', function(){
+    // $('.content').removeClass('dn')
     $('.advantages').addClass('show-result')
     $('.search-result').addClass('show-result')
-    $('.extracts').addClass('show-result')
+    $('.extracts').addClass('show-result').removeClass('dn')
     $('.extract-form').removeClass('dn')
+    $('.address').addClass('dn')
     // $('.extracts-item').addClass('show-result')
 });
 
@@ -149,9 +151,8 @@ $('.search-form__input-list li').click(function(){
 $('.search-form__input-list li').click(function () {
     $('.address').removeClass('dn')
     $('.advantages').addClass('dn')
-    $('.extracts .container').addClass('dn')
-    $('.extracts').addClass('address')
-
+    $('.extracts').addClass('dn').removeClass('show-result')
+    $('.search-result').removeClass('show-result')
 });
 
 
