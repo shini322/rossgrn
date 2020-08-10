@@ -34,6 +34,7 @@ $('.search-form__button').on('click', function(){
     $('.advantages').addClass('show-result')
     $('.search-result').addClass('show-result')
     $('.extracts').addClass('show-result').removeClass('dn')
+    $('.extracts .container').removeClass('dn')
     $('.extract-form').removeClass('dn')
     $('.address').addClass('dn')
     // $('.extracts-item').addClass('show-result')
@@ -67,6 +68,7 @@ $('.menu__list-link--extract').on('click', function(e) {
     $('.content').addClass('dn')
     $('.price').removeClass('dn')
     $('.extracts').removeClass('dn').addClass('max-width')
+    $('.how-work--last').addClass('dn')
     // $('#content').load('index.html #content');
 });
 
@@ -81,6 +83,7 @@ $('.menu__list-link--questions').on('click', function(e) {
     $('.how-work').removeClass('dn')
     $('.location').removeClass('dn')    
     $('.extracts').removeClass('max-width')
+    $('.how-work--last').addClass('dn')
 });
 
 
@@ -91,6 +94,7 @@ $('.basket-tab').on('click', function(e) {
     $('.content').addClass('dn')
     $('.basket').removeClass('dn')
     $('.how-work').removeClass('dn')
+    $('.how-work--last').addClass('dn')
 });
 
 $('.menu__list-link--basket').on('click', function(e) { 
@@ -100,6 +104,7 @@ $('.menu__list-link--basket').on('click', function(e) {
     $('.content').addClass('dn')
     $('.basket').removeClass('dn')
     $('.how-work').removeClass('dn')
+    $('.how-work--last').addClass('dn')
 });
 
 $('.menu__list-link--orders').on('click', function(e) { 
@@ -109,6 +114,7 @@ $('.menu__list-link--orders').on('click', function(e) {
     $('.content').addClass('dn')
     $('.order-login').removeClass('dn')
     $('.how-work').removeClass('dn')
+    $('.how-work--last').addClass('dn')
 });
 
 
@@ -168,7 +174,9 @@ $('.search-form__input-list li').click(function () {
     $('.search-result').removeClass('show-result')
 });
 
-
+$('.extract-form__button-add').click(function () {
+    $(this).addClass('added')
+});
 
 
 

@@ -1030,8 +1030,9 @@ button{
         }
     }
     &__button-add{
+        position: relative;
         display: flex;
-        padding: 11px 0 9px;
+        padding: 11px 0 9px 36px;
         margin-left: auto;
         justify-content: center;
         background: linear-gradient(180deg, #B6CBDC 0%, #BDCFDF 100%);
@@ -1044,10 +1045,41 @@ button{
         width: 100%;
         white-space: nowrap;
         border-bottom: 3px solid #9BB1C4;
+        transition: none;
+        &::after{
+            content: "";
+            position: absolute;
+            background-image: url(../images/icons/basket-white.svg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            width: 25px;
+            height: 21px;
+            left: 11px;
+        }
+        &::before{
+            content: 'добавить в корзину';
+        }
         @include for-sm{
             margin-bottom: 23px;
             max-width: 100%;
             order: 1;
+        }
+    }
+    &__button-add.added{
+        padding-left: 0;
+        border: 1px solid $green;
+        background: transparent;
+        cursor: auto;
+        &:after{
+            background-image: url(../images/icons/check-green.svg);
+            width: 14px;
+            height: 14px;
+            left: 44px;
+            top: 34%;
+        }
+        &:before{
+            content: 'в корзине';
+            color: $green;
         }
     }
     &__button-add-img{
