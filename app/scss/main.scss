@@ -998,6 +998,10 @@ button{
         font-weight: 500;
         font-size: 14px;
         line-height: 26px;
+        appearance: none;
+        -moz-appearance: none;
+        -webkit-appearance: none;
+ 
         @include for-sm{
             max-width: 100%;
             width: 60%;
@@ -1065,6 +1069,10 @@ button{
             order: 1;
         }
     }
+    &__button-add.active{
+        background: linear-gradient(180deg, $green 0%, $green 100%);
+        border-color: #008A1E;
+    }
     &__button-add.added{
         padding-left: 0;
         border: 1px solid $green;
@@ -1082,6 +1090,7 @@ button{
             color: $green;
         }
     }
+    
     &__button-add-img{
         margin-right: 10px;
     }

@@ -121,11 +121,11 @@ $('.menu__list-link--orders').on('click', function(e) {
 $('.tab').on('click', function(e){
     e.preventDefault(); 
   
-    $($(this).siblings()).removeClass('active');
-    $($(this).parent().siblings().find('.tab-content')).removeClass('active');
+    $($(this).siblings()).removeClass('active'),
+    $($(this).parent().siblings().find('.tab-content')).removeClass('active'),
   
-    $(this).addClass('active')
-    $($(this).attr('href')).addClass('active');
+    $(this).addClass('active'),
+    $($(this).attr('href')).addClass('active')
   
   });
 
